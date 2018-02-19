@@ -32,7 +32,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"><img class="img-fluid" src="img/logo.png" alt=""></a>
+            <a href="#" class="navbar-brand" style="width: 55px; height: 55px;"><img class="img-fluid" src="img/logo_invierta_en_el_quindio.png" alt="" style="width: 55px; height: 55px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="lnr lnr-menu"></i>
             </button>
@@ -55,13 +55,13 @@
                 <a class="nav-link page-scroll" href="#pricing">Aventura</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Reservas</a>
+                <a class="nav-link page-scroll" href="#team">Equipo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#blog">Registro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Contact</a>
+                <a class="nav-link page-scroll" href="#contact">Reservas</a>
               </li>
             </ul>
           </div>
@@ -85,13 +85,13 @@
               <a class="page-scroll" href="#pricing">Aventura</a>
             </li>
             <li>
-              <a class="page-scroll" href="#team">Reservas</a>
+              <a class="page-scroll" href="#team">Equipo</a>
             </li>
-            <li >
+            <li>
               <a class="page-scroll" href="#blog">Registro</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Contact</a>
+              <a class="page-scroll" href="#contact">Reservas</a>
             </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -106,10 +106,10 @@
 
               <h2 class="wow fadeInDown section-title" data-wow-duration="1000ms" data-wow-delay="0.3s">Invierta en el Quindío</h2>
               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
-                El Quindío cuenta con los mejores sitios turisticos del pais
+                El Quindío cuenta con los mejores sitios turisticos del país.<br><strong>¡No te los pierdas!</strong>
               </p>
                 <a href="#" class=" wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                <img class="img-fluid logo_banner" src="img/logo_banner.png" alt="">
+                <img class="img-fluid logo_banner" src="img/logo_banner_2.png" alt="">
               </a>
 
             </div>
@@ -125,7 +125,7 @@
         <div class="section-header">
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Nuestros Servicios</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">A continuación presentamos nuestros principales y destacados servicios que tenemos para ofrecerte. <br> No dudes en preguntar más información acerca de estos.</p>
         </div>
 
         <div class="row pricing-tables">
@@ -133,7 +133,7 @@
             <div class="pricing-table">
               <div class="pricing-details">
                 <h2>Asistencia Médica</h2>
-                  <p>Vestibul varius fermentum erat</p>
+                  <p>Contamos con tarjetas de asistencia médica para nuestros clientes.</p>
                   <img src="img/servicios/medico.ico" alt="">
               </div>
             </div>
@@ -143,7 +143,7 @@
             <div class="pricing-table">
               <div class="pricing-details">
                 <h2>Atractivos Turisticos</h2>
-                  <p>Vestibul varius fermentum erat</p>
+                  <p>Disfruta de los mejores atractivos turísticos de la región.<br><strong>¡No te los pierdas!</strong></p>
                   <img src="img/servicios/atractivo.ico" alt="">
               </div>
             </div>
@@ -153,7 +153,7 @@
             <div class="pricing-table">
               <div class="pricing-details">
                 <h2>Paquetes Turisticos</h2>
-                  <p>Vestibul varius fermentum erat</p>
+                  <p>Contamos con una variedad de paquetes turísticos.<br><strong>¡Pregunta por ellos!</strong></p>
                   <img src="img/servicios/paquete.ico" alt="">
               </div>
             </div>
@@ -163,7 +163,7 @@
             <div class="pricing-table">
               <div class="pricing-details">
                 <h2>Porción Terrestre</h2>
-                  <p>Vestibul varius fermentum erat</p>
+                  <p>Sí solo necesitas transporte entre un origen y un destino, nosotros lo conseguimos por ti.</p>
                   <img src="img/servicios/transporte.ico" alt="">
               </div>
             </div>
@@ -179,7 +179,7 @@
         <div class="section-header">
           <h2 class="section-title">Hoteles</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle">Nuestros convenios con los mejores hoteles nos permiten ofrecer una mejor tarifa a nuestros clientes.</p>
         </div>
         <div class="row">
           <div class="col-lg-8 col-md-12 col-xs-12">
@@ -474,9 +474,9 @@
     <section id="team" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Reservas</h2>
+          <h2 class="section-title">Nuestro equipo</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle">Trabajamos con pasión para brindarte una excelente experiencia de viaje o negocios con nosotros.</p>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -484,8 +484,8 @@
               <img src="img/team/team1.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Jhon Doe</h4>
-                  <p>Chief Technical Officer</p>
+                  <h4 class="team-title">Pablo Prada</h4>
+                  <p>Director General</p>
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -501,8 +501,8 @@
               <img src="img/team/team2.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Paul Kowalsy</h4>
-                  <p>CEO & Co-Founder</p>
+                  <h4 class="team-title">Andrés Montoya</h4>
+                  <p>Ingeniero de desarrollo</p>
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -518,8 +518,8 @@
               <img src="img/team/team3.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Emilly Williams</h4>
-                  <p>Business Manager</p>
+                  <h4 class="team-title">Luis Hernández</h4>
+                  <p>Ingeniero de desarrollo</p>
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -599,46 +599,61 @@
 
     <!-- Blog Section -->
     <section id="blog" class="section">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-          <div class="contact-block">
-            <form id="contactForm">
-              <div class="row">
-                <div class="col-md-12">
-                    <h2><strong>REGISTRATE</strong></h2>
-                    <p>Registrate y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="text" placeholder="ingrese el nombre de la empresa" id="nomEmp" class="form-control" name="nomEmp" required data-error="Por favor ingresa el nombre de la empresa">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escribe la direccion de la empresa" required data-error="Por favor ingresa la dirección de la empresa">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Escribe el pais de tu empresa" required data-error="Por favor ingresa el pais de tu empresa">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="submit-button text-center">
-                    <button class="btn btn-common" id="submit" type="submit">Registrarse</button>
-                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
+        <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Registrate</h2>
+              <hr class="lines">
+              <p class="section-subtitle">Registrate y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+              <div class="contact-block">
+                    <div class="single-team">
+                      <div class="team-details">
+                        <div class="team-inner">
+                            <form id="contactForm">
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
+                                    <div class="help-block with-errors"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <input type="text" placeholder="ingrese el nombre de la empresa" id="nomEmp" class="form-control" name="nomEmp" required data-error="Por favor ingresa el nombre de la empresa">
+                                    <div class="help-block with-errors"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escribe la direccion de la empresa" required data-error="Por favor ingresa la dirección de la empresa">
+                                    <div class="help-block with-errors"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Escribe el pais de tu empresa" required data-error="Por favor ingresa el pais de tu empresa">
+                                    <div class="help-block with-errors"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="submit-button text-center">
+                                    <button class="btn btn-common" id="submit" type="submit">Registrarse</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+
               </div>
-            </form>
-          </div>
+            </div>
         </div>
     </section>
     <!-- blog Section End -->

@@ -495,7 +495,7 @@ button:focus {
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
-  color: #333 !important;
+  color: #fff !important;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
