@@ -55,13 +55,13 @@
                 <a class="nav-link page-scroll" href="#pricing">Aventura</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Reservas</a>
+                <a class="nav-link page-scroll" href="#contact">Reservas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#blog">Registro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
+                <a class="nav-link page-scroll" href="#team">Contact</a>
               </li>
             </ul>
           </div>
@@ -599,90 +599,46 @@
 
     <!-- Blog Section -->
     <section id="blog" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Recent Blog</h2>
-          <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img1.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <div class="meta-tags">
-                  <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+        <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="contact-block">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-12">
+                    <h2><strong>REGISTRATE</strong></h2>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
+                    <div class="help-block with-errors"></div>
+                  </div>
                 </div>
-                <h3>
-                  <a href="single-post.html">How often should you tweet?</a>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img2.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <div class="meta-tags">
-                  <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" placeholder="ingrese el nombre de la empresa" id="nomEmp" class="form-control" name="nomEmp" required data-error="Por favor ingresa el nombre de la empresa">
+                    <div class="help-block with-errors"></div>
+                  </div>
                 </div>
-                <h3>
-                  <a href="single-post.html">Content is still king</a>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img3.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <div class="meta-tags">
-                  <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escribe la direccion de la empresa" required data-error="Por favor ingresa la dirección de la empresa">
+                    <div class="help-block with-errors"></div>
+                  </div>
                 </div>
-                <h3>
-                  <a href="single-post.html">Social media at work</a>
-                </h3>
-                <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Escribe el pais de tu empresa" required data-error="Por favor ingresa el pais de tu empresa">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="submit-button text-center">
+                    <button class="btn btn-common" id="submit" type="submit">Registrarse</button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
+            </form>
           </div>
         </div>
-      </div>
     </section>
     <!-- blog Section End -->
 
@@ -693,11 +649,22 @@
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-us">
-                <h3>Contact With us</h3>
                 <div class="contact-address">
-                  <p>Centerville Road, DE 19808, US </p>
-                  <p class="phone">Phone: <span>(+94 123 456 789)</span></p>
-                  <p class="email">E-mail: <span>(contact@mate.com)</span></p>
+                    <h3>Detalles de contacto</h3>
+					<img src="{{ asset('img/logo_invierta_en_el_quindio.png') }}"alt="invierta en el Quindío">
+					<p> Correo: <strong>inviertaenelquindioventas@gmail.com</strong></p>
+					<p>
+						Teléfono: <strong>(6) 7442570</strong>
+						<br>
+						Celular: <strong>+57 314 3532716</strong>
+					</p>
+					<p>Direccion: Armenia Quindío
+						<br>
+						Carrera 14 #23-15
+						<br>
+						Camara de comercio, local 9.
+					</p>
+					<p>RNT: 17779</p>
                 </div>
                 <div class="social-icons">
                   <ul>
@@ -711,28 +678,52 @@
               </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12">
+                <h2><strong>RESERVA CON NOSOTROS</strong></h2>
               <div class="contact-block">
                 <form id="contactForm">
                   <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Escribe tu cedula" required data-error="Por favor ingresa tu cedula">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required data-error="Por favor ingresa tu nombre">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                        <input type="text" placeholder="ingresa tus apellidos" id="apellidos" class="form-control" name="apellidos" required data-error="Por favor ingresa tus apellidos">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                        <input type="text" class="form-control" id="direccion" name="direccioin" placeholder="Escribe tu direccion" required data-error="Por favor ingresa tu dirección">
                         <div class="help-block with-errors"></div>
                       </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Escribe el nombre de tu empresa" required data-error="Por favor ingresa el nombre de tu empresa">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="codigpR" name="codigoR" placeholder="Escribe el codigo de tu registro" required data-error="[OPCIONAL]. Escribe el codigo de registro">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo" required data-error=" Escribe tu correo">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
                       <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <button class="btn btn-common" id="submit" type="submit">Enviar Reserva</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
                       </div>
