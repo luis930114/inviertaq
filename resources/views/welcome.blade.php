@@ -605,6 +605,7 @@
               <div class="row">
                 <div class="col-md-12">
                     <h2><strong>REGISTRATE</strong></h2>
+                    <p>Registrate y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
                   <div class="form-group">
                     <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
                     <div class="help-block with-errors"></div>
@@ -679,6 +680,7 @@
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12">
                 <h2><strong>RESERVA CON NOSOTROS</strong></h2>
+                <p><strong>Reserve con tiempo, haga su solicitiud con tiempo y espere la llamada del departamento de reservas</strong></p>
               <div class="contact-block">
                 <form id="contactForm">
                   <div class="row">
