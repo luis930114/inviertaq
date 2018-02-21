@@ -21,8 +21,11 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 
   </head>
+
   <body>
 
     <!-- Header Section Start -->
@@ -181,55 +184,268 @@
           <hr class="lines">
           <p class="section-subtitle">Nuestros convenios con los mejores hoteles nos permiten ofrecer una mejor tarifa a nuestros clientes.</p>
         </div>
+        <div class="row div-carousel-1">
+          <div class="col-lg-6">
+            <div id="carousel-armenia-estelar" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-armenia-estelar" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-armenia-estelar" data-slide-to="1"></li>
+                <li data-target="#carousel-armenia-estelar" data-slide-to="2"></li>
+                <li data-target="#carousel-armenia-estelar" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/hoteles/armenia-hotel/1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Armenia Hotel</h5>
+                    <p>Exterior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/armenia-hotel/2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Armenia Hotel</h5>
+                    <p>Interior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/armenia-hotel/3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Armenia Hotel</h5>
+                    <p>Piscina</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/armenia-hotel/4.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Armenia Hotel</h5>
+                    <p>Habitacion</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-armenia-estelar" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-armenia-estelar" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-6">
+            <div id="carousel-mocawa" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-mocawa" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-mocawa" data-slide-to="1"></li>
+                <li data-target="#carousel-mocawa" data-slide-to="2"></li>
+                <li data-target="#carousel-mocawa" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/hoteles/mocawa/1.png" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Allure Mocawa</h5>
+                    <p>Exterior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/mocawa/2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Allure Mocawa</h5>
+                    <p>Interior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/mocawa/3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Allure Mocawa</h5>
+                    <p>Piscina</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/mocawa/4.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Allure Mocawa</h5>
+                    <p>Habitaciones</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-mocawa" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-mocawa" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>  
+        </div>
+
         <div class="row">
-          <div class="col-lg-8 col-md-12 col-xs-12">
-            <div class="container">
-              <div class="row">
-                 <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-rocket"></i>
-                    </span>
-                    <div class="text">
-                      <h4>Bootstrap 4 Based</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
+          
+           <div class="col-lg-4">
+            <div id="carousel-casa-yaro" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-casa-yaro" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-casa-yaro" data-slide-to="1"></li>
+                <li data-target="#carousel-casa-yaro" data-slide-to="2"></li>
+                <li data-target="#carousel-casa-yaro" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/hoteles/casa-yaro/1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Casa de Yaro</h5>
+                    <p>Exterior</p>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-laptop-phone"></i>
-                    </span>
-                    <div class="text">
-                      <h4>Fully Responsive</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/casa-yaro/2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Casa de Yaro</h5>
+                    <p>Interior</p>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-layers"></i>
-                    </span>
-                    <div class="text">
-                      <h4>Parallax Background</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/casa-yaro/3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Casa de Yaro</h5>
+                    <p>Recepción</p>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-cog"></i>
-                    </span>
-                    <div class="text">
-                      <h4>Easy to Customize</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/casa-yaro/4.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Casa de Yaro</h5>
+                    <p>Habitaciones</p>
                   </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-casa-yaro" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-casa-yaro" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4">
+            <div id="carousel-combia" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-combia" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-combia" data-slide-to="1"></li>
+                <li data-target="#carousel-combia" data-slide-to="2"></li>
+                <li data-target="#carousel-combia" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/hoteles/combia/1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Combia</h5>
+                    <p>Exterior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/combia/2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Combia</h5>
+                    <p>Interior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/combia/3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Combia</h5>
+                    <p>Habitaciones</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/combia/4.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Combia</h5>
+                    <p>Piscina</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-combia" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-combia" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-xs-12">
-            <div class="show-box">
-              <img class="img-fulid" src="img/features/feature.png" alt="">
+
+          <div class="col-lg-4">
+            <div id="carousel-tacurrumbi" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-tacurrumbi" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-tacurrumbi" data-slide-to="1"></li>
+                <li data-target="#carousel-tacurrumbi" data-slide-to="2"></li>
+                <li data-target="#carousel-tacurrumbi" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/hoteles/tacurrumbi/1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Campestre Tacurrumbi</h5>
+                    <p>Exterior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/tacurrumbi/2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Campestre Tacurrumbi</h5>
+                    <p>Interior</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/tacurrumbi/3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Campestre Tacurrumbi</h5>
+                    <p>Habitaciones</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/hoteles/tacurrumbi/4.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Campestre Tacurrumbi</h5>
+                    <p>Piscina</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-tacurrumbi" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-tacurrumbi" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
-          </div>
+          </div> 
         </div>
+
+
+
       </div>
     </section>
     <!-- Features Section End -->
@@ -243,6 +459,16 @@
           <hr class="lines">
           <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
+
+      <div class="miclase">
+        <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/1.jpg" alt="First slide"></div>
+        <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/2.jpg" alt="First slide"></div>
+        <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/3.jpg" alt="First slide"></div>
+        <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/1.jpg" alt="First slide"></div>
+        <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/2.jpg" alt="First slide"></div>
+        <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/3.jpg" alt="First slide"></div>
+      </div>
+
         <div class="row">
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
@@ -800,6 +1026,7 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mixitup.js"></script>
@@ -818,7 +1045,9 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
+    <script src="js/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+
 
   </body>
 </html>
