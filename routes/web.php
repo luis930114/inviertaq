@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/', 'HomeController@registrarse')->name('registro.store.post');
