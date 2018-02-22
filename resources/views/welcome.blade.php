@@ -236,7 +236,7 @@
                 </a>
               </div>
             </div>
-          </div> 
+          </div>
 
           <div class="col-lg-6 carrusel-img">
             <div id="carousel-mocawa" class="carousel slide" data-ride="carousel">
@@ -287,7 +287,7 @@
                 </a>
               </div>
             </div>
-          </div>  
+          </div>
         </div>
 
 
@@ -341,7 +341,7 @@
                 </a>
               </div>
             </div>
-          </div> 
+          </div>
 
           <div class="col-lg-4 carrusel-img">
             <div id="carousel-combia" class="carousel slide" data-ride="carousel">
@@ -443,7 +443,7 @@
                 </a>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
 
 
@@ -496,7 +496,7 @@
     <!-- Portfolio Section Ends -->
 
     <!-- Start Video promo Section -->
-   
+
     <section class="video-promo section">
       <div class="container">
         <div class="row justify-content-center">
@@ -529,7 +529,7 @@
               <li><img src="img/aventura/4.jpg" alt="Cascadas" data-description="Rio verde"></li>
               <li><img src="img/aventura/5.jpg" alt="Caminatas" data-description="Caminatas"></li>
           </ul>
-        </div>  
+        </div>
       </div>
     </div>
     <!-- End Pricing Table Section -->
@@ -796,7 +796,9 @@
 					<p>
 						Teléfono: <strong>(6) 7442570</strong>
 						<br>
-						Celular: <strong>+57 314 3532716</strong>
+						Celular: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">+57 314 3532716</a></strong>
+                        <br>
+                        Hablános a nuestro Whatsapp: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">Clic aquí</a></strong>
 					</p>
 					<p>Direccion: Armenia Quindío
 						<br>
@@ -885,13 +887,13 @@
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <ul class="footer-links">
               <li>
-                <a href="#">Inicio</a>
+                <a href="#hero-area" class="page-scroll">Inicio</a>
               </li>
               <li>
-                <a href="#">Servicios</a>
+                <a href="#services" class="page-scroll">Servicios</a>
               </li>
               <li>
-                <a href="#">Acerca de Nosotros</a>
+                <a href="#team" class="page-scroll">Acerca de Nosotros</a>
               </li>
             </ul>
           </div>
@@ -919,7 +921,7 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mixitup.js"></script>
