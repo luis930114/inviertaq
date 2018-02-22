@@ -615,8 +615,7 @@
                     <div class="single-team">
                       <div class="team-details">
                         <div class="team-inner">
-                            <form id="contactForm"  method="post" >
-                                {!! Form::open(['method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form']) !!}
+                            <form id="contactForm">
                                 <div class="col-md-12">
                                   <div class="form-group">
                                     <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
@@ -643,12 +642,11 @@
                                 </div>
                                 <div class="col-md-12">
                                   <div class="submit-button text-center">
-                                    <button class="btn btn-common" id="submit1" type="submit1">Registrarse</button>
+                                    <button class="btn btn-common" id="submit" type="submit">Registrarse</button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="clearfix"></div>
                                   </div>
                                 </div>
-                                 {!! Form::close() !!}
                             </form>
                         </div>
                       </div>
@@ -699,7 +697,7 @@
                 <h2><strong>RESERVA CON NOSOTROS</strong></h2>
                 <p><strong>Reserve con tiempo, haga su solicitiud con tiempo y espere la llamada del departamento de reservas</strong></p>
               <div class="contact-block">
-                <form id="contactForm" method="post" action="{{'welcome'}}">
+                <form id="contactForm">
                   <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
