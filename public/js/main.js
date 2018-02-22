@@ -169,6 +169,19 @@
     interval: 4000
   });
 
+
+$(document).ready(function() {
+    $('.pgwSlider').pgwSlider({
+        maxHeight : 500,
+        intervalDuration : 4000});
+
+    $('.pgwSlideshow').pgwSlideshow({
+        maxHeight : 500,
+        intervalDuration : 4000
+    });
+});
+
+
   
 $(document).ready(function(){
     $('.miclase').slick({

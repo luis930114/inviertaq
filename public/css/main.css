@@ -51,6 +51,11 @@ html {
   overflow-x: hidden;
 }
 
+.carrusel-img
+{
+  padding: : 1%;
+}
+
 p {
   font-size: 14px;
   line-height: 26px;
@@ -602,7 +607,40 @@ button:focus {
     background: #f8f9fa;
     color: #61D2B4;
   }
+  .section {
+  padding: 20px 0;
+  }
+
+  .section-header {
+  color: #fff;
+  margin-bottom: 20px;
+  }
+
+  .carrusel-img
+  {
+    margin-bottom: 3%;
+  }
+
+  .logo_formulario
+  {
+    width: 30%;
+  }
+
+  .contact-us h3
+    {
+      font-size: 25px;
+      margin-bottom: 10px !important;
+    }
+
 }
+
+  @media screen and (max-width: 425px) {
+      #hero-area .contents {
+      padding: 60px 0 130px;
+    }
+
+
+  }
 
 /* ==========================================================================
   5. Services section

@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="js/pgw-slider/pgwslider.min.css"/>
+    <link rel="stylesheet" href="js/pgw-slide-show/pgwslideshow.min.css"/>
 
   </head>
 
@@ -35,7 +37,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="#" class="navbar-brand" style="width: 55px; height: 55px;"><img class="img-fluid" src="img/logo_invierta_en_el_quindio.png" alt="" style="width: 55px; height: 55px;"></a>
+            <a href="#" class="navbar-brand" style="width: 55px"><img class="img-fluid" src="img/logo_invierta_en_el_quindio.png" alt="" style="width: 55px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="lnr lnr-menu"></i>
             </button>
@@ -185,7 +187,7 @@
           <p class="section-subtitle">Nuestros convenios con los mejores hoteles nos permiten ofrecer una mejor tarifa a nuestros clientes.</p>
         </div>
         <div class="row div-carousel-1">
-          <div class="col-lg-6">
+          <div class="col-lg-6 carrusel-img">
             <div id="carousel-armenia-estelar" class="carousel slide" data-ride="carousel">
 
               <ol class="carousel-indicators">
@@ -236,7 +238,7 @@
             </div>
           </div> 
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 carrusel-img">
             <div id="carousel-mocawa" class="carousel slide" data-ride="carousel">
 
               <ol class="carousel-indicators">
@@ -288,9 +290,9 @@
           </div>  
         </div>
 
-        <div class="row">
-          
-           <div class="col-lg-4">
+
+          <div class="row">
+           <div class="col-lg-4 carrusel-img">
             <div id="carousel-casa-yaro" class="carousel slide" data-ride="carousel">
 
               <ol class="carousel-indicators">
@@ -341,7 +343,7 @@
             </div>
           </div> 
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 carrusel-img">
             <div id="carousel-combia" class="carousel slide" data-ride="carousel">
 
               <ol class="carousel-indicators">
@@ -392,7 +394,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 carrusel-img">
             <div id="carousel-tacurrumbi" class="carousel slide" data-ride="carousel">
 
               <ol class="carousel-indicators">
@@ -457,10 +459,28 @@
         <div class="section-header">
           <h2 class="section-title">Atractivos Turísticos</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle">Disfrute de los principales atractivos turisticos de la región en un entorno rodeado por la naturaleza.</p>
         </div>
+        <div class="row">
 
-      <div class="miclase">
+          <ul class="pgwSlider">
+            <li><img src="img/atractivos/1.jpg" alt="Parque del Café" data-description="Parque del Café, Mirador"></li>
+            <li><img src="img/atractivos/2.jpg" alt="Parque del Café" data-description="Parque del Café, Krater"data-large-src="img/atractivos/2.jpg"></li>
+            <li>
+                <img src="img/atractivos/3.jpg">
+                <span>Termales de Santa Rosa</span>
+            </li>
+            <li>
+                <a href="img/atractivos/4.jpg" target="_blank">
+                    <img src="img/atractivos/4.jpg">
+                    <span>Recuca</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+
+
+     <!-- <div class="miclase">
         <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/1.jpg" alt="First slide"></div>
         <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/2.jpg" alt="First slide"></div>
         <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/3.jpg" alt="First slide"></div>
@@ -469,104 +489,22 @@
         <div><img class="d-block w-100" src="img/hoteles/armenia-hotel/3.jpg" alt="First slide"></div>
       </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <!-- Portfolio Controller/Buttons -->
-            <div class="controls text-center">
-              <a class="filter active btn btn-common" data-filter="all">
-                All
-              </a>
-              <a class="filter btn btn-common" data-filter=".design">
-                Design
-              </a>
-              <a class="filter btn btn-common" data-filter=".development">
-                Development
-              </a>
-              <a class="filter btn btn-common" data-filter=".print">
-                Print
-              </a>
-            </div>
-            <!-- Portfolio Controller/Buttons Ends-->
-          </div>
-
-          <!-- Portfolio Recent Projects -->
-          <div id="portfolio" class="row">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img1.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img1.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img2.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img2.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img3.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img3.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img4.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img4.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img5.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img5.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img6.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img6.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    -->
       </div>
       <!-- Container Ends -->
     </section>
     <!-- Portfolio Section Ends -->
 
     <!-- Start Video promo Section -->
+   
     <section class="video-promo section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
               <div class="video-promo-content text-center">
-                <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Watch Our Intro video</h2>
-                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus, id tincidunt nisi porta sit amet. Suspendisse et sapien varius, pellentesque dui non, semper orci.</p>
-                <a href="https://www.youtube.com/watch?v=IXoMDwh4Cq8" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
+                <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Mira Nuestro Video </h2>
+                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Quindio Tierra Cafetera</p>
+                <a href="https://www.youtube.com/watch?v=kuzpSTLWkzU" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
               </div>
           </div>
         </div>
@@ -580,70 +518,24 @@
         <div class="section-header">
           <h2 class="section-title">Aventura</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle">Viva una experiencia única en la región. Disfrute de nuestros atractivos de aventura</p>
         </div>
 
-        <div class="row pricing-tables">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-table">
-              <div class="pricing-details">
-                <h2>Free</h2>
-                <span>$00</span>
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                </ul>
-              </div>
-              <div class="plan-button">
-                <a href="#" class="btn btn-common">Get Plan</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-table">
-              <div class="pricing-details">
-                <h2>Popular</h2>
-                <span>$3.99</span>
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                </ul>
-              </div>
-              <div class="plan-button">
-                <a href="#" class="btn btn-common">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-table">
-              <div class="pricing-details">
-                <h2>Premium</h2>
-                <span>$9.50</span>
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                </ul>
-              </div>
-              <div class="plan-button">
-                <a href="#" class="btn btn-common">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <div class="row">
+          <ul class="pgwSlideshow">
+              <li><img src="img/aventura/1.jpg" alt="Vuelo en Globo" data-description="Buenavista"></li>
+              <li><img src="img/aventura/2.jpg" alt="Parapente" data-description="Parapente"></li>
+              <li><img src="img/aventura/3.jpg" alt="Cabalgata" data-description="El Carmelo"></li>
+              <li><img src="img/aventura/4.jpg" alt="Cascadas" data-description="Rio verde"></li>
+              <li><img src="img/aventura/5.jpg" alt="Caminatas" data-description="Caminatas"></li>
+          </ul>
+        </div>  
       </div>
     </div>
     <!-- End Pricing Table Section -->
 
     <!-- Counter Section Start -->
+    <!--
     <div class="counters section" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row">
@@ -694,6 +586,8 @@
         </div>
       </div>
     </div>
+
+  -->
     <!-- Counter Section End -->
 
     <!-- Team section Start -->
@@ -702,60 +596,67 @@
         <div class="section-header">
           <h2 class="section-title">Nuestro equipo</h2>
           <hr class="lines">
-          <p class="section-subtitle">Trabajamos con pasión para brindarte una excelente experiencia de viaje o negocios con nosotros.</p>
+          <p class="section-subtitle">Trabajamos con pasión para brindarte una excelente experiencia de viaje o negocios en la región.</p>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
-              <img src="img/team/team1.jpg" alt="">
+              <img src="img/team/1.ico" alt="">
               <div class="team-details">
                 <div class="team-inner">
                   <h4 class="team-title">Pablo Prada</h4>
                   <p>Director General</p>
+                  <!--
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
+                -->
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
-              <img src="img/team/team2.jpg" alt="">
+              <img src="img/team/2.ico" alt="">
               <div class="team-details">
                 <div class="team-inner">
                   <h4 class="team-title">Andrés Montoya</h4>
                   <p>Ingeniero de desarrollo</p>
+                  <!--
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
+                -->
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
-              <img src="img/team/team3.jpg" alt="">
+              <img src="img/team/3.ico" alt="">
               <div class="team-details">
                 <div class="team-inner">
                   <h4 class="team-title">Luis Hernández</h4>
                   <p>Ingeniero de desarrollo</p>
+                  <!--
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
+                -->
                 </div>
               </div>
             </div>
           </div>
+          <!--
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
               <img class="img-fulid" src="img/team/team4.jpg" alt="">
@@ -773,6 +674,7 @@
               </div>
             </div>
           </div>
+        -->
         </div>
       </div>
     </section>
@@ -785,35 +687,31 @@
           <div class="col-md-12">
             <div class="touch-slider owl-carousel owl-theme">
               <div class="testimonial-item">
-                <img src="img/testimonial/customer1.jpg" alt="Client Testimonoal" />
+                <img src="img/servicios/medico.ico" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Jone Deam</h3>
-                  <span>Fondor of Jalmori</span>
+                  <p>Asistencia Médica en Todo Lugar</p>
+                  <h3>Asistencia Médica</h3>
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="img/testimonial/customer2.jpg" alt="Client Testimonoal" />
+                <img src="img/servicios/atractivo.ico" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Oidila Matik</h3>
-                  <span>President Lexo Inc</span>
+                  <p>Atractivos Turisticos en toda la región</p>
+                  <h3>Atractivos Turisticos</h3>
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="img/testimonial/customer3.jpg" alt="Client Testimonoal" />
+                <img src="img/servicios/paquete.ico" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Alex Dattilo</h3>
-                  <span>CEO Optima Inc</span>
+                  <p>Paquetes turisticos para disfrutar con comodidad</p>
+                  <h3>Paquetes Turisticos</h3>
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="img/testimonial/customer4.jpg" alt="Client Testimonoal" />
+                <img src="img/servicios/transporte.ico" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Paul Kowalsy</h3>
-                  <span>CEO & Founder</span>
+                  <p>Tranporte desde y hacia cualquier parte de la region</p>
+                  <h3>Porción Terrestre</h3>
                 </div>
               </div>
             </div>
@@ -891,9 +789,9 @@
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-us">
-                <div class="contact-address">
+                <div class="contact-address text-center">
                     <h3>Detalles de contacto</h3>
-					<img src="{{ asset('img/logo_invierta_en_el_quindio.png') }}"alt="invierta en el Quindío">
+					<img src="{{ asset('img/logo_invierta_en_el_quindio.png') }}" class="logo_formulario" alt="invierta en el Quindío">
 					<p> Correo: <strong>inviertaenelquindioventas@gmail.com</strong></p>
 					<p>
 						Teléfono: <strong>(6) 7442570</strong>
@@ -908,19 +806,17 @@
 					</p>
 					<p>RNT: 17779</p>
                 </div>
-                <div class="social-icons">
+                <div class="social-icons text-center">
                   <ul>
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li class="facebook"><a href="https://web.facebook.com/InviertaenelQuindio/"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="https://twitter.com/invierta1"><i class="fa fa-twitter"></i></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/invierta_quindio/"><i class="fa fa-instagram"></i></a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <h2><strong>RESERVA CON NOSOTROS</strong></h2>
+            <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
+                <h3><strong>RESERVA CON NOSOTROS</strong></h3>
                 <p><strong>Reserve con tiempo, haga su solicitiud con tiempo y espere la llamada del departamento de reservas</strong></p>
               <div class="contact-block">
                 <form id="contactForm">
@@ -965,7 +861,7 @@
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
-                      <div class="submit-button text-center">
+                      <div class="submit-button text-center col-md-12">
                         <button class="btn btn-common" id="submit" type="submit">Enviar Reserva</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
@@ -989,22 +885,19 @@
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <ul class="footer-links">
               <li>
-                <a href="#">Homepage</a>
+                <a href="#">Inicio</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#">Servicios</a>
               </li>
               <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
+                <a href="#">Acerca de Nosotros</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="copyright">
-              <p>All copyrights reserved &copy; 2018 - Designed & Developed by <a rel="nofollow" href="https://uideck.com">UIdeck</a></p>
+              <p>Todos los derechos reservados &copy; 2018 - Diseñado y Desarrolado por <a rel="nofollow" href="https://uideck.com">UIdeck</a></p>
             </div>
           </div>
         </div>
@@ -1026,7 +919,7 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mixitup.js"></script>
@@ -1046,8 +939,9 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/slick/slick.min.js"></script>
+    <script src="js/pgw-slider/pgwslider.min.js"></script>
+    <script src="js/pgw-slide-show/pgwslideshow.min.js"></script>
     <script src="js/main.js"></script>
-
 
   </body>
 </html>
