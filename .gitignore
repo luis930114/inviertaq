@@ -20,3 +20,4 @@ workspace.xml
 Thumbs.db
 .ftpconfig
 *.log
+.env0
