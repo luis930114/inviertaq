@@ -503,8 +503,8 @@
           <div class="col-lg-8">
               <div class="video-promo-content text-center">
                 <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Mira Nuestro Video </h2>
-                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Quindio Tierra Cafetera</p>
-                <a href="https://www.youtube.com/watch?v=kuzpSTLWkzU" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
+                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Invierta en el Quindío</p>
+                <a href="https://www.youtube.com/watch?v=tzjGmzveolc" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
               </div>
           </div>
         </div>
@@ -798,7 +798,9 @@
 						<br>
 						Celular: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">+57 314 3532716</a></strong>
                         <br>
-                        Hablános a nuestro Whatsapp: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">Clic aquí</a></strong>
+                        ¿Nos visitas desde un celular?
+                        <br>
+                        Hablanos a nuestro Whatsapp: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">Clic aquí</a></strong>
 					</p>
 					<p>Direccion: Armenia Quindío
 						<br>
