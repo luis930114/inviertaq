@@ -808,7 +808,7 @@
 						<br>
 						Camara de comercio, local 9.
 					</p>
-					<p>RNT: 17779</p>
+					<p>Registro Nacional de Turismo: <a href="https://www.rues.org.co/RNT" target="_blank">17779 - Clic aquí</a></p>
                 </div>
                 <div class="social-icons text-center">
                   <ul>
