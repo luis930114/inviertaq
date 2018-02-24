@@ -730,48 +730,84 @@
               <p class="section-subtitle">Registrate y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" >
             <div class="col-lg-3">
-
             </div>
             <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
               <div class="contact-block">
-                    <div class="single-team">
+                    <div class="single-team" >
                       <div class="team-details">
                         <div class="team-inner">
-                            <form id="contactForm">
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
+                            @if (isset($codigo_registro))
+                                @if(isset($estado) && $estado == true)
+                                <div class="row"  >
+                                    <div class="" >
+                                        <div class="" >
+                                            <a class="back-to-top" data-dismiss="alert" href="#"  >&times;</a>
+                                            <p style="color:#000000">
+                                            <strong>¡Estupendo!</strong> te haz registrado. Tu codigo de registro es:
+
+                                                <strong>{{ $codigo_registro }}</strong>
+
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" placeholder="ingrese el nombre de la empresa" id="nomEmp" class="form-control" name="nomEmp" required data-error="Por favor ingresa el nombre de la empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
+                            @endif
+                            @endif   
+                            @if(isset($errors) && sizeof($errors) > 0 )
+                                <div class="row">
+                                    <div class="span12">
+                                        <div class="alert alert-error fade in">
+                                            <a class="close" data-dismiss="alert" href="#">&times;</a>
+                                            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de reserva, por favor revisa tus datos en inténtalo nuevamente.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escribe la direccion de la empresa" required data-error="Por favor ingresa la dirección de la empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
-                                </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Escribe el pais de tu empresa" required data-error="Por favor ingresa el pais de tu empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
-                                </div>
-                                <div class="col-md-12">
-                                  <div class="submit-button text-center">
-                                    <button class="btn btn-common" id="submit" type="submit">Registrarse</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                  </div>
-                                </div>
-                            </form>
+                            @endif
+                            {!! Form::open(['route' => ['registro'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form', 'style'=>'color:#000000']) !!}
+                            <div class="form-group  {{ $errors->has('nit') ? ' has-error' : '' }} ">
+	                            {!! Form::text('nit','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nit de la empresa ', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('nit'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('nit') }}</strong>
+	                                </span>
+	                            @endif
+	                        </div>
+                            <div class="form-group  {{ $errors->has('nomEmp') ? ' has-error' : '' }}">
+	                            {!! Form::text('nomEmp','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nombre de la empresa completo', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('nomEmp'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('nomEmp') }}</strong>
+	                                </span>
+	                            @endif
+                            </div>
+                            <div class="form-group  {{ $errors->has('direccion') ? ' has-error' : '' }}">
+	                            {!! Form::text('direccion','', ['class' => 'form-control', 'placeholder' => 'Ingresa la direccion empresa ', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('direccion'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('direccion') }}</strong>
+	                                </span>
+	                            @endif
+                            </div>
+                            <div class="form-group  {{ $errors->has('pais') ? ' has-error' : '' }}">
+	                            {!! Form::text('pais','', ['class' => 'form-control', 'placeholder' => 'Ingresa el pais de la empresa', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('pais'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('pais') }}</strong>
+	                                </span>
+	                            @endif
+                            </div>
+                            <div class="col-md-12">
+                              <div class="submit-button text-center">
+                                {!! Form::submit('Reserva', ['class' => 'btn btn-common']) !!}
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                              </div>
+
+                          </div>
+                    </div>
+                        {!! Form::close() !!}
                         </div>
                       </div>
                     </div>
