@@ -698,11 +698,27 @@ button:focus {
   position: relative;
 }
 
+#transporte {
+  background: url(../img/bg1.jpg) fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
 #features .section-title {
   color: #fff;
 }
 
 #features .section-subtitle {
+  color: #fff;
+}
+
+#transporte .section-title {
+  color: #fff;
+}
+
+#transporte .section-subtitle {
   color: #fff;
 }
 

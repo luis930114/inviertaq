@@ -60,6 +60,9 @@
                 <a class="nav-link page-scroll" href="#pricing">Aventura</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link page-scroll" href="#transporte">Transporte</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Equipo</a>
               </li>
               <li class="nav-item">
@@ -88,6 +91,9 @@
             </li>
             <li>
               <a class="page-scroll" href="#pricing">Aventura</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#transporte">Transporte</a>
             </li>
             <li>
               <a class="page-scroll" href="#team">Equipo</a>
@@ -532,6 +538,58 @@
         </div>
       </div>
     </div>
+
+    <section id="transporte" class="section" data-stellar-background-ratio="0.2">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Transporte</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Contamos con Gran variedad de vehiculos de tranporte terrestre</p>
+        </div>
+        <div class="row div-carousel-1">
+          <div class="col-lg-3"></div> 
+          <div class="col-lg-6 carrusel-img">
+            <div id="carousel-transporte" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-transporte" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-transporte" data-slide-to="1"></li>
+                <li data-target="#carousel-transporte" data-slide-to="2"></li>
+                <li data-target="#carousel-transporte" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/transporte/1.jpg" alt="First slide">
+
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/transporte/2.jpg" alt="Second slide">
+
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/transporte/3.jpg" alt="Third slide">
+  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/transporte/4.jpg" alt="Third slide">
+
+                </div>
+                <a class="carousel-control-prev" href="#carousel-armenia-estelar" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-transporte" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </section>
     <!-- End Pricing Table Section -->
 
     <!-- Counter Section Start -->
