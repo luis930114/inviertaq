@@ -60,6 +60,9 @@
                 <a class="nav-link page-scroll" href="#pricing">Aventura</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link page-scroll" href="#transporte">Transporte</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Instalaciones</a>
               </li>
               <li class="nav-item">
@@ -88,6 +91,9 @@
             </li>
             <li>
               <a class="page-scroll" href="#pricing">Aventura</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#transporte">Transporte</a>
             </li>
             <li>
               <a class="page-scroll" href="#team">Instalaciones</a>
@@ -503,8 +509,8 @@
           <div class="col-lg-8">
               <div class="video-promo-content text-center">
                 <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Mira Nuestro Video </h2>
-                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Quindio Tierra Cafetera</p>
-                <a href="https://www.youtube.com/watch?v=kuzpSTLWkzU" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
+                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Invierta en el Quindío</p>
+                <a href="https://www.youtube.com/watch?v=tzjGmzveolc" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
               </div>
           </div>
         </div>
@@ -532,6 +538,58 @@
         </div>
       </div>
     </div>
+
+    <section id="transporte" class="section" data-stellar-background-ratio="0.2">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Transporte</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Contamos con Gran variedad de vehiculos de tranporte terrestre</p>
+        </div>
+        <div class="row div-carousel-1">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 carrusel-img">
+            <div id="carousel-transporte" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-transporte" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-transporte" data-slide-to="1"></li>
+                <li data-target="#carousel-transporte" data-slide-to="2"></li>
+                <li data-target="#carousel-transporte" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/transporte/1.jpg" alt="First slide">
+
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/transporte/2.jpg" alt="Second slide">
+
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/transporte/3.jpg" alt="Third slide">
+
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/transporte/4.jpg" alt="Third slide">
+
+                </div>
+                <a class="carousel-control-prev" href="#carousel-armenia-estelar" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-transporte" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </section>
     <!-- End Pricing Table Section -->
 
     <!-- Counter Section Start -->
@@ -728,48 +786,84 @@
               <p class="section-subtitle">Registrate y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" >
             <div class="col-lg-3">
-
             </div>
             <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
               <div class="contact-block">
-                    <div class="single-team">
+                    <div class="single-team" >
                       <div class="team-details">
                         <div class="team-inner">
-                            <form id="contactForm">
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="nit" name="nit" placeholder="Escribe el nit de la empresa" required data-error="Por favor ingresa el nit de tu empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
+                            @if (isset($codigo_registro))
+                                @if(isset($estado) && $estado == true)
+                                <div class="row"  >
+                                    <div class="" >
+                                        <div class="" >
+                                            <a class="back-to-top" data-dismiss="alert" href="#"  >&times;</a>
+                                            <p style="color:#000000">
+                                            <strong>¡Estupendo!</strong> te haz registrado. Tu codigo de registro es:
+
+                                                <strong>{{ $codigo_registro }}</strong>
+
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" placeholder="ingrese el nombre de la empresa" id="nomEmp" class="form-control" name="nomEmp" required data-error="Por favor ingresa el nombre de la empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
+                            @endif
+                            @endif
+                            @if(isset($errors) && sizeof($errors) > 0 )
+                                <div class="row">
+                                    <div class="span12">
+                                        <div class="alert alert-error fade in">
+                                            <a class="close" data-dismiss="alert" href="#">&times;</a>
+                                            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de reserva, por favor revisa tus datos en inténtalo nuevamente.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escribe la direccion de la empresa" required data-error="Por favor ingresa la dirección de la empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
-                                </div>
-                                <div class="col-md-12">
-                                  <div class="form-group">
-                                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Escribe el pais de tu empresa" required data-error="Por favor ingresa el pais de tu empresa">
-                                    <div class="help-block with-errors"></div>
-                                  </div>
-                                </div>
-                                <div class="col-md-12">
-                                  <div class="submit-button text-center">
-                                    <button class="btn btn-common" id="submit" type="submit">Registrarse</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                  </div>
-                                </div>
-                            </form>
+                            @endif
+                            {!! Form::open(['route' => ['registro'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form', 'style'=>'color:#000000']) !!}
+                            <div class="form-group  {{ $errors->has('nit') ? ' has-error' : '' }} ">
+	                            {!! Form::text('nit','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nit de la empresa ', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('nit'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('nit') }}</strong>
+	                                </span>
+	                            @endif
+	                        </div>
+                            <div class="form-group  {{ $errors->has('nomEmp') ? ' has-error' : '' }}">
+	                            {!! Form::text('nomEmp','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nombre de la empresa completo', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('nomEmp'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('nomEmp') }}</strong>
+	                                </span>
+	                            @endif
+                            </div>
+                            <div class="form-group  {{ $errors->has('direccion') ? ' has-error' : '' }}">
+	                            {!! Form::text('direccion','', ['class' => 'form-control', 'placeholder' => 'Ingresa la direccion empresa ', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('direccion'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('direccion') }}</strong>
+	                                </span>
+	                            @endif
+                            </div>
+                            <div class="form-group  {{ $errors->has('pais') ? ' has-error' : '' }}">
+	                            {!! Form::text('pais','', ['class' => 'form-control', 'placeholder' => 'Ingresa el pais de la empresa', 'style'=>'color:#000000']) !!}
+	                            @if ($errors->has('pais'))
+	                                <span class="help-block">
+	                                    <strong>{{ $errors->first('pais') }}</strong>
+	                                </span>
+	                            @endif
+                            </div>
+                            <div class="col-md-12">
+                              <div class="submit-button text-center">
+                                {!! Form::submit('Reserva', ['class' => 'btn btn-common']) !!}
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                              </div>
+
+                          </div>
+                    </div>
+                        {!! Form::close() !!}
                         </div>
                       </div>
                     </div>
@@ -796,7 +890,9 @@
 						<br>
 						Celular: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">+57 314 3532716</a></strong>
                         <br>
-                        Hablános a nuestro Whatsapp: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">Clic aquí</a></strong>
+                        ¿Nos visitas desde un celular?
+                        <br>
+                        Hablanos a nuestro Whatsapp: <strong><a href="https://api.whatsapp.com/send?phone=573143532716&text=Hola,%20quisiera%20conocer%20más%20acerca%20de%20sus%20servicios.%20Podrían%20brindarme%20más%20información?">Clic aquí</a></strong>
 					</p>
 					<p>Direccion: Armenia Quindío
 						<br>
@@ -804,7 +900,7 @@
 						<br>
 						Camara de comercio, local 9.
 					</p>
-					<p>RNT: 17779</p>
+					<p>Registro Nacional de Turismo: <a href="https://www.rues.org.co/RNT" target="_blank">17779 - Clic aquí</a></p>
                 </div>
                 <div class="social-icons text-center">
                   <ul>

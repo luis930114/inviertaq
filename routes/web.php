@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('/home','HomeController@enviarSolicitud')->name('registro');
+Route::post('/registro','HomeController@enviarSolicitud')->name('registro');
+Route::get('/registro','HomeController@getEnviarsolicitud')->name('registro.get');
