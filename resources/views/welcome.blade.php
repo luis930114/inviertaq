@@ -60,7 +60,7 @@
                 <a class="nav-link page-scroll" href="#pricing">Aventura</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Equipo</a>
+                <a class="nav-link page-scroll" href="#team">Instalaciones</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#blog">Registro</a>
@@ -90,7 +90,7 @@
               <a class="page-scroll" href="#pricing">Aventura</a>
             </li>
             <li>
-              <a class="page-scroll" href="#team">Equipo</a>
+              <a class="page-scroll" href="#team">Instalaciones</a>
             </li>
             <li>
               <a class="page-scroll" href="#blog">Registro</a>
@@ -594,19 +594,19 @@
     <section id="team" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Nuestro equipo</h2>
+          <h2 class="section-title">Nuestras Instalaciones</h2>
           <hr class="lines">
           <p class="section-subtitle">Trabajamos con pasión para brindarte una excelente experiencia de viaje o negocios en la región.</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="single-team">
-              <img src="img/team/1.ico" alt="">
+            <div class="single-team" style="text-align: center; position: relative; top: 50%;-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);transform: translateY(-50%);">
+              <img src="{{ asset('img/instalaciones/instalaciones_1.jpeg') }}" alt="Instalaciones de Invierta en el Quindío">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Pablo Prada</h4>
-                  <p>Director General</p>
-                  <!--
+                  <h4 class="team-title">Oficina General</h4>
+                  <!--<p>Director General</p>
+
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -619,13 +619,12 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="single-team">
-              <img src="img/team/2.ico" alt="">
+            <div class="single-team" style="text-align: center; position: relative; top: 50%;-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);transform: translateY(-50%);">
+              <img src="{{ asset('img/instalaciones/instalaciones_4.jpg') }}" alt="Instalaciones de Invierta en el Quindío">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Andrés Montoya</h4>
-                  <p>Ingeniero de desarrollo</p>
-                  <!--
+                  <h4 class="team-title">Oficina General</h4>
+                  <!--<p>Ingeniero de desarrollo</p>
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -638,13 +637,12 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="single-team">
-              <img src="img/team/3.ico" alt="">
+            <div class="single-team" style="text-align: center; position: relative; top: 50%;-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);transform: translateY(-50%);">
+              <img src="{{ asset('img/instalaciones/instalaciones_2.jpeg') }}" alt="Instalaciones de Invierta en el Quindío">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Luis Hernández</h4>
-                  <p>Ingeniero de desarrollo</p>
-                  <!--
+                    <h4 class="team-title">Oficina General</h4>
+                    <!--<p>Ingeniero de desarrollo</p>
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
