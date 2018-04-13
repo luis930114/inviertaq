@@ -8,6 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
     <title>Invierta en el Quindío</title>
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('img/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('img/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('img/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('img/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('img/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('img/favicon/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('img/favicon/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -783,7 +801,7 @@
             <div class="section-header">
               <h2 class="section-title">Registrate</h2>
               <hr class="lines">
-              <p class="section-subtitle">Registrate y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
+              <p class="section-subtitle">Registrate como empresa y aprovecha de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
             </div>
         </div>
         <div class="row" >
@@ -796,27 +814,25 @@
                         <div class="team-inner">
                             @if (isset($codigo_registro))
                                 @if(isset($estado) && $estado == true)
-                                <div class="row"  >
-                                    <div class="" >
-                                        <div class="" >
-                                            <a class="back-to-top" data-dismiss="alert" href="#"  >&times;</a>
-                                            <p style="color:#000000">
-                                            <strong>¡Estupendo!</strong> te haz registrado. Tu codigo de registro es:
-
-                                                <strong>{{ $codigo_registro }}</strong>
-
-                                            </p>
+                                    <div class="row">
+                                        <div class="">
+                                            <div class="" >
+                                                <a class="back-to-top" data-dismiss="alert" href="#"  >&times;</a>
+                                                <p style="color:#000000">
+                                                <strong>¡Estupendo!</strong> te haz registrado. Tu codigo de registro es:
+                                                    <strong>{{ $codigo_registro }}</strong>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            @endif
+                                @endif
                             @endif
                             @if(isset($errors) && sizeof($errors) > 0 )
                                 <div class="row">
                                     <div class="span12">
                                         <div class="alert alert-error fade in">
                                             <a class="close" data-dismiss="alert" href="#">&times;</a>
-                                            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de reserva, por favor revisa tus datos en inténtalo nuevamente.
+                                            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de registro, por favor revisa tus datos en inténtalo nuevamente.
                                         </div>
                                     </div>
                                 </div>
@@ -856,7 +872,7 @@
                             </div>
                             <div class="col-md-12">
                               <div class="submit-button text-center">
-                                {!! Form::submit('Reserva', ['class' => 'btn btn-common']) !!}
+                                {!! Form::submit('Registrarse', ['class' => 'btn btn-common']) !!}
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                               </div>
@@ -958,7 +974,7 @@
                       </div>
                     </div>
                       <div class="submit-button text-center col-md-12">
-                        <button class="btn btn-common" id="submit" type="submit">Enviar Reserva</button>
+                        <button class="btn btn-common" id="submit" type="submit">Enviar Solicitud de Reserva</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
                       </div>
@@ -978,7 +994,7 @@
       <div class="container">
         <div class="row">
           <!-- Footer Links -->
-          <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
             <ul class="footer-links">
               <li>
                 <a href="#hero-area" class="page-scroll">Inicio</a>
@@ -991,9 +1007,9 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="col-lg-8 col-sm-6 col-xs-12">
             <div class="copyright">
-              <p>Todos los derechos reservados &copy; 2018 - Diseñado y Desarrolado por <a rel="nofollow" href="https://uideck.com">UIdeck</a></p>
+              <p>Todos los derechos reservados &copy; {{ date('Y') }} - Plantilla Desarrollada por <a rel="nofollow" href="https://uideck.com">UIdeck</a> - Modificación y adaptación realizada por Andrés David Montoya y Luis Felipe Hernández.</p>
             </div>
           </div>
         </div>
