@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Reserva extends Model
+class SolicitudReserva extends Model
 {
     /**
      * El nombre de la tabla asociada al modelo.
      *
      * @var string
      */
-    protected $table = 'reserva';
+    protected $table = 'solicitudreserva';
 
     /**
      * El nombre de la llave primaria de la tabla.
@@ -19,7 +19,7 @@ class Reserva extends Model
      *
      * @var string
      */
-    protected $primaryKey = 'cedula';
+    protected $primaryKey = 'id';
 
     /**
      * The attributes that are mass assignable.
@@ -27,14 +27,11 @@ class Reserva extends Model
      * @var array
      */
     protected $fillable = [
-        'cedula',
         'nombre',
-        'apellidos',
-        'direccion',
-        'nombre_empresa',
-        'codigo_registro',
+        'telefono',
         'correo',
-
+        'solicitud',
+        'detalles',
     ];
 
     /**
@@ -45,4 +42,15 @@ class Reserva extends Model
     protected $hidden = [
 
     ];
+
+    /**
+    * The attributes that should be cast to native types.
+    *
+    * @var array
+    */
+    protected $casts = [
+       'solicitud' => 'array',
+    ];
+
+    
 }

@@ -17,3 +17,5 @@ Route::get('/', function () {
 //Route::get('/home','HomeController@enviarSolicitud')->name('registro');
 Route::post('/registro','HomeController@enviarSolicitud')->name('registro');
 Route::get('/registro','HomeController@getEnviarsolicitud')->name('registro.get');
+
+Route::post('/solicitud-de-reserva','HomeController@solicitud_reserva')->name('solicitud_reserva');

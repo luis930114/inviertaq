@@ -929,58 +929,94 @@
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
                 <h3><strong>RESERVA CON NOSOTROS</strong></h3>
-                <p><strong>Reserve con tiempo, haga su solicitiud con tiempo y espere la llamada del departamento de reservas</strong></p>
-              <div class="contact-block">
-                <form id="contactForm">
-                  <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Escribe tu cedula" required data-error="Por favor ingresa tu cedula">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required data-error="Por favor ingresa tu nombre">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="ingresa tus apellidos" id="apellidos" class="form-control" name="apellidos" required data-error="Por favor ingresa tus apellidos">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="direccion" name="direccioin" placeholder="Escribe tu direccion" required data-error="Por favor ingresa tu dirección">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Escribe el nombre de tu empresa" required data-error="Por favor ingresa el nombre de tu empresa">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="codigpR" name="codigoR" placeholder="Escribe el codigo de tu registro" required data-error="[OPCIONAL]. Escribe el codigo de registro">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo" required data-error=" Escribe tu correo">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                      <div class="submit-button text-center col-md-12">
-                        <button class="btn btn-common" id="submit" type="submit">Enviar Solicitud de Reserva</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                <p>Realice su solicitud de reserva con tiempo, y espere la llamada de nuestro equipo de reservas para ultimar detalles.</p>
+                <div class="contact-block">
+                    @if($errors->any())
+            			<div class="row">
+            				<div class="col-lg-12">
+            					<div class="alert alert-error fade in">
+            			            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            			            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de reserva, por favor revisa tus datos en inténtalo nuevamente.
+            			        </div>
+            				</div>
+            			</div>
+            		@endif
+                    {!! Form::open(['route' => ['solicitud_reserva'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form']) !!}
+    						<div class="form-group {{ $errors->has('nombre') ? ' has-error' : '' }}">
+    	                        {!! Form::label('nombre', 'Nombre completo:', ['class' => 'contact-name', 'style' => 'color:white;']) !!}
+    	                        <div class="">
+    	                            {!! Form::text('nombre','', ['class' => 'form-control', 'placeholder' => 'Ingresa tu nombre completo', 'required' => 'required']) !!}
+    	                            @if ($errors->has('nombre'))
+    	                                <span class="help-block">
+    	                                    <strong>{{ $errors->first('nombre') }}</strong>
+    	                                </span>
+    	                            @endif
+    	                        </div>
+    	                    </div>
+    						<div class="form-group {{ $errors->has('telefono') ? ' has-error' : '' }}">
+    							{!! Form::label('telefono', 'Teléfono:', ['class' => 'contact-name']) !!}
+    							<div class="">
+    								{!! Form::text('telefono','', ['class' => 'form-control', 'placeholder' => 'Ingresa tu teléfono ', 'required' => 'required']) !!}
+    								@if ($errors->has('telefono'))
+    									<span class="help-block">
+    										<strong>{{ $errors->first('telefono') }}</strong>
+    									</span>
+    								@endif
+    							</div>
+    						</div>
+    	                    <div class="form-group {{ $errors->has('correo') ? ' has-error' : '' }}">
+    	                        {!! Form::label('correo', 'Correo electrónico:', ['class' => 'contact-name' ]) !!}
+    	                        <div class="">
+    	                            {!! Form::text('correo','', ['class' => 'form-control', 'placeholder' => 'Ingresa tu correo electrónico', 'required' => 'required']) !!}
+    	                            @if ($errors->has('correo'))
+    	                                <span class="help-block">
+    	                                    <strong>{{ $errors->first('correo') }}</strong>
+    	                                </span>
+    	                            @endif
+    	                        </div>
+    	                    </div>
+                            <div class="form-group {{ $errors->has('correo') ? ' has-error' : '' }}">
+    	                        {!! Form::label('solicitud', 'Seleccione 1 o más solicitudes', ['class' => 'contact-name']) !!}
+    	                        <div class="">
+                                    <label class="checkbox-inline">
+                                        {!! Form::checkbox('solicitud[]', 'atractivos_turisticos') !!} Atractivos turísticos
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        {!! Form::checkbox('solicitud[]', 'asistencia_medica') !!} Asistencia médica
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        {!! Form::checkbox('solicitud[]', 'hospedaje') !!} Hospedaje
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        {!! Form::checkbox('solicitud[]', 'inmobiliaria') !!} Inmobiliaria
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        {!! Form::checkbox('solicitud[]', 'paquetes_turisticos') !!} Paquetes turísticos
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        {!! Form::checkbox('solicitud[]', 'transporte') !!} Transporte
+                                    </label>
+    	                            @if ($errors->has('solicitud'))
+    	                                <span class="help-block">
+    	                                    <strong>{{ $errors->first('solicitud') }}</strong>
+    	                                </span>
+    	                            @endif
+    	                        </div>
+    	                    </div>
+    	                    <div class="form-group {{ $errors->has('detalles') ? ' has-error' : '' }}">
+    	                        {!! Form::label('detalles', 'Comentarios adicionales:', ['class' => 'control-label']) !!}
+    	                        <div class="">
+    	                            {!! Form::textArea('detalles','', ['class' => 'form-control editor', 'placeholder' => 'Ingrese tus detalles de la solicitud, como por ejemplo: día de llegada, sitio turístico que le gustaría visitar, lugar de hospedaje, lugar de arrivo.', 'rows' => 5, 'required' => 'required']) !!}
+    	                            @if ($errors->has('detalles'))
+    	                                <span class="help-block">
+    	                                    <strong>{{ $errors->first('detalles') }}</strong>
+    	                                </span>
+    	                            @endif
+    	                        </div>
+    	                    </div>
+    	                  {!! Form::submit('Enviar solicitud de reserva', ['class' => 'submit btn btn-common']) !!}
+    	            <!-- /.box-body -->
+    	            {!! Form::close() !!}
               </div>
             </div>
           </div>
@@ -1054,6 +1090,24 @@
     <script src="js/pgw-slider/pgwslider.min.js"></script>
     <script src="js/pgw-slide-show/pgwslideshow.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.18.0/sweetalert2.all.min.js" integrity="sha256-/slqiIlMWIuEAMgWX6mA35wLOAZ3eJk5cS57wuKfEeQ=" crossorigin="anonymous"></script>
+    @if (session('result'))
+        <script type="text/javascript">
+            $(document).ready(function() {
+                swal({
+                    type: '{{ session('result.type', 'info') }}',
+                    title: '{{ session('result.title', 'Información general') }}',
+                    html: '{{ session('result.html', 'Sin mensaje...') }}'
+                })
+            });
+        </script>
+    @endif
+    <script type="text/javascript">
+        $(document).ready(function() {
+            @if($errors->any())
+    			document.location.href = "#contact";
+    		@endif
+        });
+    </script>
   </body>
 </html>
