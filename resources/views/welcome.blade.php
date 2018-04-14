@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="js/slick/slick-theme.css"/>
     <link rel="stylesheet" href="js/pgw-slider/pgwslider.min.css"/>
     <link rel="stylesheet" href="js/pgw-slide-show/pgwslideshow.min.css"/>
+    <!-- Bootstrap Date Picker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.min.css" integrity="sha256-mlKJFBS1jbZwwDrZD1ApO7YFS6MA1XDN37jZ9GDFC64=" crossorigin="anonymous" />
 
   </head>
 
@@ -931,16 +933,6 @@
                 <h3><strong>RESERVA CON NOSOTROS</strong></h3>
                 <p>Realice su solicitud de reserva con tiempo, y espere la llamada de nuestro equipo de reservas para ultimar detalles.</p>
                 <div class="contact-block">
-                    @if($errors->any())
-            			<div class="row">
-            				<div class="col-lg-12">
-            					<div class="alert alert-error fade in">
-            			            <a class="close" data-dismiss="alert" href="#">&times;</a>
-            			            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de reserva, por favor revisa tus datos en inténtalo nuevamente.
-            			        </div>
-            				</div>
-            			</div>
-            		@endif
                     {!! Form::open(['route' => ['solicitud_reserva'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form']) !!}
     						<div class="form-group {{ $errors->has('nombre') ? ' has-error' : '' }}">
     	                        {!! Form::label('nombre', 'Nombre completo:', ['class' => 'contact-name', 'style' => 'color:white;']) !!}
@@ -1003,6 +995,28 @@
     	                            @endif
     	                        </div>
     	                    </div>
+                            <div class="form-group">
+                                {!! Form::label('ingreso', 'Fecha de ingreso y de salida:', ['class' => 'contact-name' , 'style' => 'color:white;']) !!}
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group input-daterange">
+                                    {!! Form::text('fecha_ingreso', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de ingreso', 'required' => 'required']) !!}
+                                    <div class="input-group-addon">Hasta</div>
+                                    {!! Form::text('fecha_salida', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de salida', 'required' => 'required']) !!}
+                                </div>
+                                <div class="">
+                                    @if ($errors->has('fecha_ingreso'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('fecha_ingreso') }}</strong>
+                                        </span>
+                                    @endif
+                                    @if ($errors->has('fecha_salida'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('fecha_salida') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
     	                    <div class="form-group {{ $errors->has('detalles') ? ' has-error' : '' }}">
     	                        {!! Form::label('detalles', 'Comentarios adicionales:', ['class' => 'control-label']) !!}
     	                        <div class="">
@@ -1091,6 +1105,9 @@
     <script src="js/pgw-slide-show/pgwslideshow.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.18.0/sweetalert2.all.min.js" integrity="sha256-/slqiIlMWIuEAMgWX6mA35wLOAZ3eJk5cS57wuKfEeQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Date Picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js" integrity="sha256-tW5LzEC7QjhG0CiAvxlseMTs2qJS7u3DRPauDjFJ3zo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.es.min.js" integrity="sha256-K5G+7qV0tjuHL0LlhCU0TqQKR+7QwT8MfEUe2UgpmRY=" crossorigin="anonymous"></script>
     @if (session('result'))
         <script type="text/javascript">
             $(document).ready(function() {
@@ -1107,6 +1124,24 @@
             @if($errors->any())
     			document.location.href = "#contact";
     		@endif
+            $('.input-daterange').datepicker({
+    			format: 'dd-mm-yyyy',
+        		startDate: '+0d',
+    			language: 'es',
+    			todayBtn: 'linked',
+    			autoClose: true,
+    			todayHighlight: true,
+    			minDate: new Date(),
+    		});
+            $('.input-daterange input').each(function() {
+                $(this).datepicker('clearDates');
+            });
+
+            $('input[name=fecha_ingreso]').change(function(event) {
+                console.log("Abriendo salida");
+                $('input[name=fecha_ingreso]').datepicker('hide');
+                $('input[name=fecha_salida]').datepicker('show');
+            });
         });
     </script>
   </body>

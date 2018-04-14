@@ -31,7 +31,9 @@ class SolicitudReserva extends Model
         'telefono',
         'correo',
         'solicitud',
-        'detalles',
+        'fecha_ingreso',
+        'fecha_salida',
+        'detalles'
     ];
 
     /**
@@ -52,5 +54,15 @@ class SolicitudReserva extends Model
        'solicitud' => 'array',
     ];
 
-    
+    public function setFechaIngresoAttribute($value)
+    {
+        $this->attributes['fecha_ingreso'] = date('Y-m-d', strtotime($value));
+    }
+
+    public function setFechaSalidaAttribute($value)
+    {
+        $this->attributes['fecha_salida'] = date('Y-m-d', strtotime($value));
+    }
+
+
 }

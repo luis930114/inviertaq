@@ -19,6 +19,8 @@ class CreateSolicitudReservaTable extends Migration
             $table->string('telefono',50);
             $table->string('correo',255);
             $table->text('solicitud');
+            $table->date('fecha_ingreso');
+            $table->date('fecha_salida');
             $table->text('detalles');
             $table->timestamps();
         });

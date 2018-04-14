@@ -28,6 +28,8 @@ class SolicitudReservaRequest extends FormRequest
             'telefono' => 'required|numeric|digits_between:7,50',
             'correo' => 'required|email|max:255',
             'solicitud' => 'required|array|min:1',
+            'fecha_ingreso' => 'required',
+            'fecha_salida' => 'required',
             'detalles' => 'required|min:5|max:2000'
         ];
     }
