@@ -461,11 +461,11 @@
                 </div>
                 <a class="carousel-control-prev" href="#carousel-tacurrumbi" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-tacurrumbi" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                  <span class="sr-only">Siguiente</span>
                 </a>
               </div>
             </div>
@@ -810,68 +810,63 @@
             <div class="col-lg-3">
             </div>
             <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-              <div class="contact-block">
+                @if ($errors->registroempresa->any())
+                    <div class="alert alert-danger">
+                        <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de registro, por favor revisa tus datos en inténtalo nuevamente.
+                        <br>
+                        <br>
+                        <ul>
+                            @foreach ($errors->registroempresa->all() as $error)
+                                <li style="list-style: inside !important">{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <div class="contact-block">
                     <div class="single-team" >
                       <div class="team-details">
                         <div class="team-inner">
-                            @if (isset($codigo_registro))
-                                @if(isset($estado) && $estado == true)
-                                    <div class="row">
-                                        <div class="">
-                                            <div class="" >
-                                                <a class="back-to-top" data-dismiss="alert" href="#"  >&times;</a>
-                                                <p style="color:#000000">
-                                                <strong>¡Estupendo!</strong> te haz registrado. Tu codigo de registro es:
-                                                    <strong>{{ $codigo_registro }}</strong>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endif
-                            @endif
-                            @if(isset($errors) && sizeof($errors) > 0 )
-                                <div class="row">
-                                    <div class="span12">
-                                        <div class="alert alert-error fade in">
-                                            <a class="close" data-dismiss="alert" href="#">&times;</a>
-                                            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de registro, por favor revisa tus datos en inténtalo nuevamente.
-                                        </div>
-                                    </div>
-                                </div>
-                            @endif
-                            {!! Form::open(['route' => ['registro'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form', 'style'=>'color:#000000']) !!}
-                            <div class="form-group  {{ $errors->has('nit') ? ' has-error' : '' }} ">
-	                            {!! Form::text('nit','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nit de la empresa ', 'style'=>'color:#000000']) !!}
-	                            @if ($errors->has('nit'))
+                            {!! Form::open(['route' => ['registro_empresa'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form', 'style'=>'color:#000']) !!}
+                            <div class="form-group  {{ $errors->registroempresa->has('reem_nit') ? ' has-error' : '' }} ">
+	                            {!! Form::text('reem_nit','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nit de la empresa ', 'style'=>'color: #000', 'required' => 'required']) !!}
+	                            @if ($errors->registroempresa->has('reem_nit'))
 	                                <span class="help-block">
-	                                    <strong>{{ $errors->first('nit') }}</strong>
+	                                    <strong>{{ $errors->registroempresa->first('reem_nit') }}</strong>
 	                                </span>
 	                            @endif
 	                        </div>
-                            <div class="form-group  {{ $errors->has('nomEmp') ? ' has-error' : '' }}">
-	                            {!! Form::text('nomEmp','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nombre de la empresa completo', 'style'=>'color:#000000']) !!}
-	                            @if ($errors->has('nomEmp'))
+                            <div class="form-group  {{ $errors->registroempresa->has('reem_nombre') ? ' has-error' : '' }}">
+	                            {!! Form::text('reem_nombre','', ['class' => 'form-control', 'placeholder' => 'Ingresa el nombre de la empresa completo', 'style'=>'color: #000', 'required' => 'required']) !!}
+	                            @if ($errors->registroempresa->has('reem_nombre'))
 	                                <span class="help-block">
-	                                    <strong>{{ $errors->first('nomEmp') }}</strong>
+	                                    <strong>{{ $errors->registroempresa->first('reem_nombre') }}</strong>
 	                                </span>
 	                            @endif
                             </div>
-                            <div class="form-group  {{ $errors->has('direccion') ? ' has-error' : '' }}">
-	                            {!! Form::text('direccion','', ['class' => 'form-control', 'placeholder' => 'Ingresa la direccion empresa ', 'style'=>'color:#000000']) !!}
-	                            @if ($errors->has('direccion'))
+                            <div class="form-group {{ $errors->registroempresa->has('reem_telefono') ? ' has-error' : '' }}">
+								{!! Form::text('reem_telefono','', ['class' => 'form-control', 'placeholder' => 'Ingresa el teléfono de la empresa', 'style' => 'color: #000', 'required' => 'required']) !!}
+								@if ($errors->registroempresa->has('reem_telefono'))
+									<span class="help-block">
+										<strong>{{ $errors->registroempresa->first('reem_telefono') }}</strong>
+									</span>
+								@endif
+    						</div>
+                            <div class="form-group  {{ $errors->registroempresa->has('reem_direccion') ? ' has-error' : '' }}">
+	                            {!! Form::text('reem_direccion','', ['class' => 'form-control', 'placeholder' => 'Ingresa la dirección de la empresa', 'style'=>'color: #000', 'required' => 'required']) !!}
+	                            @if ($errors->registroempresa->has('reem_direccion'))
 	                                <span class="help-block">
-	                                    <strong>{{ $errors->first('direccion') }}</strong>
+	                                    <strong>{{ $errors->registroempresa->first('reem_direccion') }}</strong>
 	                                </span>
 	                            @endif
                             </div>
-                            <div class="form-group  {{ $errors->has('pais') ? ' has-error' : '' }}">
-	                            {!! Form::text('pais','', ['class' => 'form-control', 'placeholder' => 'Ingresa el pais de la empresa', 'style'=>'color:#000000']) !!}
-	                            @if ($errors->has('pais'))
+                            <div class="form-group {{ $errors->registroempresa->has('reem_correo') ? ' has-error' : '' }}">
+	                            {!! Form::text('reem_correo','', ['class' => 'form-control', 'placeholder' => 'Ingresa el correo electrónico de la empresa', 'style' => 'color: #000', 'required' => 'required']) !!}
+	                            @if ($errors->registroempresa->has('reem_correo'))
 	                                <span class="help-block">
-	                                    <strong>{{ $errors->first('pais') }}</strong>
+	                                    <strong>{{ $errors->registroempresa->first('reem_correo') }}</strong>
 	                                </span>
 	                            @endif
-                            </div>
+    	                    </div>
                             <div class="col-md-12">
                               <div class="submit-button text-center">
                                 {!! Form::submit('Registrarse', ['class' => 'btn btn-common']) !!}
@@ -933,6 +928,18 @@
                 <h3><strong>RESERVA CON NOSOTROS</strong></h3>
                 <p>Realice su solicitud de reserva con tiempo, y espere la llamada de nuestro equipo de reservas para ultimar detalles.</p>
                 <div class="contact-block">
+                    @if ($errors->any())
+                        <div class="alert alert-danger text-left">
+                            <strong>¡Upss!</strong> Tenemos algunos inconvenientes con el formulario de registro, por favor revisa tus datos en inténtalo nuevamente.
+                            <br>
+                            <br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li style="list-style: inside !important">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     {!! Form::open(['route' => ['solicitud_reserva'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form']) !!}
     						<div class="form-group {{ $errors->has('nombre') ? ' has-error' : '' }}">
     	                        {!! Form::label('nombre', 'Nombre completo:', ['class' => 'contact-name', 'style' => 'color:white;']) !!}
@@ -1121,6 +1128,9 @@
     @endif
     <script type="text/javascript">
         $(document).ready(function() {
+            @if($errors->registroempresa->any())
+                document.location.href = "#blog";
+            @endif
             @if($errors->any())
     			document.location.href = "#contact";
     		@endif
