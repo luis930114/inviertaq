@@ -89,7 +89,7 @@
                                 <a class="nav-link page-scroll" href="#registro-empresa">Registro</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#reserva-cliente">Reservas</a>
+                                <a class="nav-link page-scroll" href="#contact">Reservas</a>
                             </li>
                         </ul>
                     </div>
@@ -122,7 +122,7 @@
                         <a class="page-scroll" href="#registro-empresa">Registro</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#reserva-cliente">Reservas</a>
+                        <a class="page-scroll" href="#contact">Reservas</a>
                     </li>
                 </ul>
                 <!-- Mobile Menu End -->
@@ -1062,7 +1062,7 @@
                 document.location.href = "#registro-empresa";
                 @endif
                 @if($errors->any())
-                document.location.href = "#reserva-cliente";
+                document.location.href = "#contact";
                 @endif
                 $('.input-daterange').datepicker({
                     format: 'dd-mm-yyyy',
