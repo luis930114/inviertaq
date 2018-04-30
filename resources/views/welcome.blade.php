@@ -68,28 +68,28 @@
                                 <a class="nav-link page-scroll" href="#hero-area">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#services">Servicios</a>
+                                <a class="nav-link page-scroll" href="#servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#features">Hoteles</a>
+                                <a class="nav-link page-scroll" href="#hoteles">Hoteles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#portfolios">Atractivos</a>
+                                <a class="nav-link page-scroll" href="#atractivos">Atractivos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#pricing">Aventura</a>
+                                <a class="nav-link page-scroll" href="#aventura">Aventura</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link page-scroll" href="#transporte">Transporte</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#team">Instalaciones</a>
+                                <a class="nav-link page-scroll" href="#instalaciones">Instalaciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#blog">Registro</a>
+                                <a class="nav-link page-scroll" href="#registro-empresa">Registro</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#contact">Reservas</a>
+                                <a class="nav-link page-scroll" href="#reserva-cliente">Reservas</a>
                             </li>
                         </ul>
                     </div>
@@ -101,28 +101,28 @@
                         <a class="page-scroll" href="#hero-area">Inicio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Servicios</a>
+                        <a class="page-scroll" href="#servicios">Servicios</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#features">Hoteles</a>
+                        <a class="page-scroll" href="#hoteles">Hoteles</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolios">Atractivos</a>
+                        <a class="page-scroll" href="#atractivos">Atractivos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Aventura</a>
+                        <a class="page-scroll" href="#aventura">Aventura</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#transporte">Transporte</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Instalaciones</a>
+                        <a class="page-scroll" href="#instalaciones">Instalaciones</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#blog">Registro</a>
+                        <a class="page-scroll" href="#registro-empresa">Registro</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Reservas</a>
+                        <a class="page-scroll" href="#reserva-cliente">Reservas</a>
                     </li>
                 </ul>
                 <!-- Mobile Menu End -->
@@ -148,7 +148,7 @@
         <!-- Header Section End -->
 
         <!-- Services Section Start -->
-        <section id="services" class="section">
+        <section id="servicios" class="section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Nuestros Servicios</h2>
@@ -198,7 +198,7 @@
         <!-- Services Section End -->
 
         <!-- Features Section Start -->
-        <section id="features" class="section" data-stellar-background-ratio="0.2">
+        <section id="hoteles" class="section" data-stellar-background-ratio="0.2">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Hoteles</h2>
@@ -454,7 +454,7 @@
         <!-- Features Section End -->
 
         <!-- Portfolio Section -->
-        <section id="portfolios" class="section">
+        <section id="atractivos" class="section">
             <!-- Container Starts -->
             <div class="container">
                 <div class="section-header">
@@ -500,7 +500,7 @@
         <!-- End Video Promo Section -->
 
         <!-- Start Pricing Table Section -->
-        <section id="pricing" class="section pricing-section">
+        <section id="aventura" class="section pricing-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Aventura</h2>
@@ -622,7 +622,7 @@
         <!-- Counter Section End -->
 
         <!-- Team section Start -->
-        <section id="team" class="section">
+        <section id="instalaciones" class="section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Nuestras Instalaciones</h2>
@@ -753,7 +753,7 @@
         <!-- testimonial Section Start -->
 
         <!-- Blog Section -->
-        <section id="blog" class="section">
+        <section id="registro-empresa" class="section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Registrate</h2>
@@ -827,7 +827,7 @@
                 </div>
             </div>
         </section>
-        <!-- blog Section End -->
+        <!-- Blog Section End -->
 
         <!-- Contact Section Start -->
         <section id="contact" class="section" data-stellar-background-ratio="-0.2">
@@ -981,10 +981,10 @@
                                 <a href="#hero-area" class="page-scroll">Inicio</a>
                             </li>
                             <li>
-                                <a href="#services" class="page-scroll">Servicios</a>
+                                <a href="#servicios" class="page-scroll">Servicios</a>
                             </li>
                             <li>
-                                <a href="#team" class="page-scroll">Acerca de Nosotros</a>
+                                <a href="#instalaciones" class="page-scroll">Acerca de Nosotros</a>
                             </li>
                         </ul>
                     </div>
@@ -1059,10 +1059,10 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 @if($errors->registroempresa-> any())
-                document.location.href = "#blog";
+                document.location.href = "#registro-empresa";
                 @endif
                 @if($errors->any())
-                document.location.href = "#contact";
+                document.location.href = "#reserva-cliente";
                 @endif
                 $('.input-daterange').datepicker({
                     format: 'dd-mm-yyyy',
