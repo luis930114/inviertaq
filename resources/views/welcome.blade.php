@@ -4,10 +4,11 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
+        <meta name="keywords" content="Quindio, Turimos, Invertir, Inmobiliaria">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="author" content="Grayrids">
+        <meta name="author" content="Andrés David Montoya Aguirre, Luis Felipe Hernández">
         <title>Invierta en el Quindío</title>
+        <meta name="description" content="Turismo por el quindío.">
         <!-- Fav Icon -->
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon/apple-icon-60x60.png') }}">
