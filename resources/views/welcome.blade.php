@@ -56,7 +56,7 @@
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <a href="#hero-area" class="navbar-brand page-scroll" style="width: 55px"><img class="img-fluid" src="img/logo_invierta_en_el_quindio.png" alt="" style="width: 55px;"></a>
+                        <a href="#hero-area" class="navbar-brand page-scroll" style="width: 55px"><img class="img-fluid" src="{{ asset('img/logo_invierta_en_el_quindio.png') }}" alt="" style="width: 55px;"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="lnr lnr-menu"></i>
                         </button>
@@ -137,7 +137,7 @@
                                 El Quindío cuenta con los mejores sitios turisticos del país.<br><strong>¡No te los pierdas!</strong>
                             </p>
                             <a href="#" class=" wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                                <img class="img-fluid logo_banner" src="img/logo_banner_2.png" alt="">
+                                <img class="img-fluid logo_banner" src="{{ asset('img/logo_banner_2.png') }}" alt="">
                             </a>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <div class="pricing-details">
                                 <h2>Asistencia Médica</h2>
                                 <p>Contamos con tarjetas de asistencia médica para nuestros clientes.</p>
-                                <img src="img/servicios/medico.ico" alt="">
+                                <img src="{{ asset('img/servicios/medico.ico') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                             <div class="pricing-details">
                                 <h2>Atractivos Turísticos</h2>
                                 <p>Disfruta de los mejores atractivos turísticos de la región.<br><strong>¡No te los pierdas!</strong></p>
-                                <img src="img/servicios/atractivo.ico" alt="">
+                                <img src="{{ asset('img/servicios/atractivo.ico') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                             <div class="pricing-details">
                                 <h2>Paquetes Turísticos</h2>
                                 <p>Contamos con una variedad de paquetes turísticos.<br><strong>¡Pregunta por ellos!</strong></p>
-                                <img src="img/servicios/paquete.ico" alt="">
+                                <img src="{{ asset('img/servicios/paquete.ico') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                             <div class="pricing-details">
                                 <h2>Porción Terrestre</h2>
                                 <p>Sí solo necesitas transporte entre un origen y un destino, nosotros lo conseguimos por ti.</p>
-                                <img src="img/servicios/transporte.ico" alt="">
+                                <img src="{{ asset('img/servicios/transporte.ico') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -215,28 +215,28 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/hoteles/armenia-hotel/1.jpg" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Armenia Hotel</h5>
                                         <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/armenia-hotel/2.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Armenia Hotel</h5>
                                         <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/armenia-hotel/3.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Armenia Hotel</h5>
                                         <p>Piscina</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/armenia-hotel/4.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Armenia Hotel</h5>
                                         <p>Habitación</p>
@@ -263,28 +263,28 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/hoteles/mocawa/1.png" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/1.png') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Allure Mocawa</h5>
                                         <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/mocawa/2.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Allure Mocawa</h5>
                                         <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/mocawa/3.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Allure Mocawa</h5>
                                         <p>Piscina</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/mocawa/4.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Allure Mocawa</h5>
                                         <p>Habitaciones</p>
@@ -313,28 +313,28 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/hoteles/casa-yaro/1.jpg" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Casa de Yaro</h5>
                                         <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/casa-yaro/2.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Casa de Yaro</h5>
                                         <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/casa-yaro/3.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Casa de Yaro</h5>
                                         <p>Recepción</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/casa-yaro/4.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Casa de Yaro</h5>
                                         <p>Habitaciones</p>
@@ -361,28 +361,28 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/hoteles/combia/1.jpg" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/combia/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Combia</h5>
                                         <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/combia/2.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/combia/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Combia</h5>
                                         <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/combia/3.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/combia/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Combia</h5>
                                         <p>Habitaciones</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/combia/4.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/combia/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Combia</h5>
                                         <p>Piscina</p>
@@ -409,28 +409,28 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/hoteles/tacurrumbi/1.jpg" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Campestre Tacurrumbi</h5>
                                         <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/tacurrumbi/2.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Campestre Tacurrumbi</h5>
                                         <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/tacurrumbi/3.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Campestre Tacurrumbi</h5>
                                         <p>Habitaciones</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/hoteles/tacurrumbi/4.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Campestre Tacurrumbi</h5>
                                         <p>Piscina</p>
@@ -464,16 +464,16 @@
                 <div class="row">
                     <ul class="pgwSlider">
                         <li>
-                            <img src="img/atractivos/1.jpg" alt="Parque del Café" data-description="Mirador" data-large-src="img/atractivos/1.jpg">
+                            <img src="{{ asset('img/atractivos/1.jpg') }}" alt="Parque del Café" data-description="Mirador" data-large-src="{{ asset('img/atractivos/1.jpg') }}">
                         </li>
                         <li>
-                            <img src="img/atractivos/2.jpg" alt="Parque del Café" data-description="Atracción mecánica Krater" data-large-src="img/atractivos/2.jpg">
+                            <img src="{{ asset('img/atractivos/2.jpg') }}" alt="Parque del Café" data-description="Atracción mecánica Krater" data-large-src="{{ asset('img/atractivos/2.jpg') }}">
                         </li>
                         <li>
-                            <img src="img/atractivos/3.jpg" alt="Termales de Santa Rosa de Cabal" data-description="Naturaleza" data-large-src="img/atractivos/3.jpg">
+                            <img src="{{ asset('img/atractivos/3.jpg') }}" alt="Termales de Santa Rosa de Cabal" data-description="Naturaleza" data-large-src="{{ asset('img/atractivos/3.jpg') }}">
                         </li>
                         <li>
-                            <img src="img/atractivos/4.jpg" alt="Recuca" data-description="Recorrido de la Cultura Cafetera" data-large-src="img/atractivos/4.jpg">
+                            <img src="{{ asset('img/atractivos/4.jpg') }}" alt="Recuca" data-description="Recorrido de la Cultura Cafetera" data-large-src="{{ asset('img/atractivos/4.jpg') }}">
                         </li>
                     </ul>
                 </div>
@@ -508,11 +508,11 @@
                 </div>
                 <div class="row">
                     <ul class="pgwSlideshow">
-                        <li><img src="img/aventura/1.jpg" alt="Vuelo en globo" height="1279"></li>
-                        <li><img src="img/aventura/2.jpg" alt="Parapente" height="1279"></li>
-                        <li><img src="img/aventura/3.jpg" alt="Cabalgatas" height="1279"></li>
-                        <li><img src="img/aventura/4.jpg" alt="Cascadas" height="1279"></li>
-                        <li><img src="img/aventura/5.jpg" alt="Caminatas" height="1279"></li>
+                        <li><img src="{{ asset('img/aventura/1.jpg') }}" alt="Vuelo en globo" height="1279"></li>
+                        <li><img src="{{ asset('img/aventura/2.jpg') }}" alt="Parapente" height="1279"></li>
+                        <li><img src="{{ asset('img/aventura/3.jpg') }}" alt="Cabalgatas" height="1279"></li>
+                        <li><img src="{{ asset('img/aventura/4.jpg') }}" alt="Cascadas" height="1279"></li>
+                        <li><img src="{{ asset('img/aventura/5.jpg') }}" alt="Caminatas" height="1279"></li>
                     </ul>
                 </div>
             </div>
@@ -537,16 +537,16 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/transporte/1.jpg" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('img/transporte/1.jpg') }}" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/transporte/2.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('img/transporte/2.jpg') }}" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/transporte/3.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/transporte/3.jpg') }}" alt="Third slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/transporte/4.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('img/transporte/4.jpg') }}" alt="Third slide">
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-armenia-estelar" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -717,28 +717,28 @@
                     <div class="col-md-12">
                         <div class="touch-slider owl-carousel owl-theme">
                             <div class="testimonial-item">
-                                <img src="img/servicios/medico.ico" alt="Client Testimonoal" />
+                                <img src="{{ asset('img/servicios/medico.ico') }}" alt="Client Testimonoal" />
                                 <div class="testimonial-text">
                                     <p>Asistencia Médica en Todo Lugar</p>
                                     <h3>Asistencia Médica</h3>
                                 </div>
                             </div>
                             <div class="testimonial-item">
-                                <img src="img/servicios/atractivo.ico" alt="Client Testimonoal" />
+                                <img src="{{ asset('img/servicios/atractivo.ico') }}" alt="Client Testimonoal" />
                                 <div class="testimonial-text">
                                     <p>Atractivos Turísticos en toda la región</p>
                                     <h3>Atractivos Turísticos</h3>
                                 </div>
                             </div>
                             <div class="testimonial-item">
-                                <img src="img/servicios/paquete.ico" alt="Client Testimonoal" />
+                                <img src="{{ asset('img/servicios/paquete.ico') }}" alt="Client Testimonoal" />
                                 <div class="testimonial-text">
                                     <p>Paquetes turísticos para disfrutar con comodidad</p>
                                     <h3>Paquetes Turísticos</h3>
                                 </div>
                             </div>
                             <div class="testimonial-item">
-                                <img src="img/servicios/transporte.ico" alt="Client Testimonoal" />
+                                <img src="{{ asset('img/servicios/transporte.ico') }}" alt="Client Testimonoal" />
                                 <div class="testimonial-text">
                                     <p>Tranporte desde y hacia cualquier parte de la región</p>
                                     <h3>Porción Terrestre</h3>
@@ -1057,10 +1057,10 @@
         @endif
         <script type="text/javascript">
             $(document).ready(function() {
-                @if($errors - > registroempresa - > any())
+                @if($errors->registroempresa-> any())
                 document.location.href = "#blog";
                 @endif
-                @if($errors - > any())
+                @if($errors->any())
                 document.location.href = "#contact";
                 @endif
                 $('.input-daterange').datepicker({
@@ -1077,7 +1077,6 @@
                 });
 
                 $('input[name=fecha_ingreso]').change(function(event) {
-                    console.log("Abriendo salida");
                     $('input[name=fecha_ingreso]').datepicker('hide');
                     $('input[name=fecha_salida]').datepicker('show');
                 });
