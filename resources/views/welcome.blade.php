@@ -156,7 +156,195 @@
             </div>
         </header>
         <!-- Header Section End -->
-
+        
+        <!-- section de registro y reserva -->
+        <section id="reg_reserva" class="section" >
+            <div class="contact-form" >
+                <div class="container" style="float:left;width:50%">
+                    <div class="row" > 
+                        <div class="col-lg-6 col-sm-6 col-xs-12"  >
+                            <div class="container" >
+                                <div class="section-header" style="width:60%">
+                                    <h2 class="section-title">Registrate</h2>
+                                    <hr class="lines">
+                                    <p class="section-subtitle">Registrate como empresa y aproveche de nuestros mejores precios en inmobiliaria y turismo en todo el eje cafetero.</p>
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-3">
+                                </div>
+                                <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+                                    @if ($errors->registroempresa->any())
+                                    <div class="alert alert-danger">
+                                        <strong>�Upss!</strong> Tenemos algunos inconvenientes con el formulario de registro, por favor revise sus datos en intentelo nuevamente.
+                                        <br>
+                                        <br>
+                                        <ul>
+                                            @foreach ($errors->registroempresa->all() as $error)
+                                            <li style="list-style: inside !important">{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                    @endif
+                                    <div class="contact-block">
+                                        <div class="single-team">
+                                            <div class="team-details">
+                                                <div class="team-inner">
+                                                    {!! Form::open(['route' => ['registro_empresa'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form1', 'style'=>'color:#000']) !!}
+                                                    <div class="form-group  {{ $errors->registroempresa->has('reem_nit') ? ' has-error' : '' }} ">
+                                                        {!! Form::text('reem_nit','', ['class' => 'form-control', 'placeholder' => 'Ingrese el nit de la empresa ', 'style'=>'color: #000', 'required' => 'required']) !!} @if ($errors->registroempresa->has('reem_nit'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->registroempresa->first('reem_nit') }}</strong>
+                                                        </span> @endif
+                                                    </div>
+                                                    <div class="form-group  {{ $errors->registroempresa->has('reem_nombre') ? ' has-error' : '' }}">
+                                                        {!! Form::text('reem_nombre','', ['class' => 'form-control', 'placeholder' => 'Ingrese el nombre de la empresa completo', 'style'=>'color: #000', 'required' => 'required']) !!} @if ($errors->registroempresa->has('reem_nombre'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->registroempresa->first('reem_nombre') }}</strong>
+                                                        </span> @endif
+                                                    </div>
+                                                    <div class="form-group {{ $errors->registroempresa->has('reem_telefono') ? ' has-error' : '' }}">
+                                                        {!! Form::text('reem_telefono','', ['class' => 'form-control', 'placeholder' => 'Ingrese el telefono de la empresa', 'style' => 'color: #000', 'required' => 'required']) !!} @if ($errors->registroempresa->has('reem_telefono'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->registroempresa->first('reem_telefono') }}</strong>
+                                                        </span> @endif
+                                                    </div>
+                                                    <div class="form-group  {{ $errors->registroempresa->has('reem_direccion') ? ' has-error' : '' }}">
+                                                        {!! Form::text('reem_direccion','', ['class' => 'form-control', 'placeholder' => 'Ingrese la dirección de la empresa', 'style'=>'color: #000', 'required' => 'required']) !!} @if ($errors->registroempresa->has('reem_direccion'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->registroempresa->first('reem_direccion') }}</strong>
+                                                        </span> @endif
+                                                    </div>
+                                                    <div class="form-group {{ $errors->registroempresa->has('reem_correo') ? ' has-error' : '' }}">
+                                                        {!! Form::text('reem_correo','', ['class' => 'form-control', 'placeholder' => 'Ingrese el correo electronico de la empresa', 'style' => 'color: #000', 'required' => 'required']) !!} @if ($errors->registroempresa->has('reem_correo'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->registroempresa->first('reem_correo') }}</strong>
+                                                        </span> @endif
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="submit-button text-center">
+                                                            {!! Form::submit('Registrarse', ['class' => 'btn btn-common', 'style' => 'cursor: pointer;']) !!}
+                                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {!! Form::close() !!}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6 col-sm-6 col-xs-12 text-center" style="float:left; width:50%"  >
+                            <h3><strong>RESERVA CON NOSOTROS</strong></h3>
+                            <p>Realice su solicitud de reserva con tiempo, y espere la llamada de nuestro equipo de reservas para ultimar detalles.</p>
+                            <div class="contact-block">
+                                @if ($errors->any())
+                                <div class="alert alert-danger text-left">
+                                    <strong>�Upss!</strong> Tenemos algunos inconvenientes con el formulario de registro, por favor revise sus datos en intentalo nuevamente.
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                        <li style="list-style: inside !important">{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                @endif {!! Form::open(['route' => ['solicitud_reserva'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form']) !!}
+                                <div class="form-group {{ $errors->has('nombre') ? ' has-error' : '' }}">
+                                    {!! Form::label('nombre', 'Nombre completo:', ['class' => 'contact-name', 'style' => 'color:white;']) !!}
+                                    <div class="">
+                                        {!! Form::text('nombre','', ['class' => 'form-control', 'placeholder' => 'Ingrese su nombre completo', 'required' => 'required']) !!} @if ($errors->has('nombre'))
+                                        <span class="help-block">
+        	                                    <strong>{{ $errors->first('nombre') }}</strong>
+        	                                </span> @endif
+                                    </div>
+                                </div>
+                                <div class="form-group {{ $errors->has('telefono') ? ' has-error' : '' }}">
+                                    {!! Form::label('telefono', 'Telefono:', ['class' => 'contact-name']) !!}
+                                    <div class="">
+                                        {!! Form::text('telefono','', ['class' => 'form-control', 'placeholder' => 'Ingrese su numero de telefono ', 'required' => 'required']) !!} @if ($errors->has('telefono'))
+                                        <span class="help-block">
+        										<strong>{{ $errors->first('telefono') }}</strong>
+        									</span> @endif
+                                    </div>
+                                </div>
+                                <div class="form-group {{ $errors->has('correo') ? ' has-error' : '' }}">
+                                    {!! Form::label('correo', 'Correo electronico:', ['class' => 'contact-name' ]) !!}
+                                    <div class="">
+                                        {!! Form::text('correo','', ['class' => 'form-control', 'placeholder' => 'Ingrese su dirección de correo electronico', 'required' => 'required']) !!} @if ($errors->has('correo'))
+                                        <span class="help-block">
+        	                                    <strong>{{ $errors->first('correo') }}</strong>
+        	                                </span> @endif
+                                    </div>
+                                </div>
+                                <div class="form-group {{ $errors->has('correo') ? ' has-error' : '' }}">
+                                    {!! Form::label('solicitud', 'Seleccione 1 o mas solicitudes', ['class' => 'contact-name']) !!}
+                                    <div class="">
+                                        <label class="checkbox-inline">
+                                            {!! Form::checkbox('solicitud[]', 'atractivos_turisticos') !!} Atractivos turisticos
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            {!! Form::checkbox('solicitud[]', 'asistencia_medica') !!} Asistencia medica
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            {!! Form::checkbox('solicitud[]', 'hospedaje') !!} Hospedaje
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            {!! Form::checkbox('solicitud[]', 'inmobiliaria') !!} Inmobiliaria
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            {!! Form::checkbox('solicitud[]', 'paquetes_turisticos') !!} Paquetes turisticos
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            {!! Form::checkbox('solicitud[]', 'transporte') !!} Transporte
+                                        </label> @if ($errors->has('solicitud'))
+                                        <span class="help-block">
+        	                                    <strong>{{ $errors->first('solicitud') }}</strong>
+        	                                </span> @endif
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {!! Form::label('ingreso', 'Fecha de ingreso y de salida:', ['class' => 'contact-name' , 'style' => 'color:white;']) !!}
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-daterange">
+                                        {!! Form::text('fecha_ingreso', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de ingreso', 'required' => 'required']) !!}
+                                        <div class="input-group-addon">Hasta</div>
+                                        {!! Form::text('fecha_salida', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de salida', 'required' => 'required']) !!}
+                                    </div>
+                                    <div class="">
+                                        @if ($errors->has('fecha_ingreso'))
+                                        <span class="help-block">
+                                                <strong>{{ $errors->first('fecha_ingreso') }}</strong>
+                                            </span> @endif @if ($errors->has('fecha_salida'))
+                                        <span class="help-block">
+                                                <strong>{{ $errors->first('fecha_salida') }}</strong>
+                                            </span> @endif
+                                    </div>
+                                </div>
+                                <div class="form-group {{ $errors->has('detalles') ? ' has-error' : '' }}">
+                                    {!! Form::label('detalles', 'Comentarios adicionales:', ['class' => 'control-label']) !!}
+                                    <div class="">
+                                        {!! Form::textArea('detalles','', ['class' => 'form-control editor', 'placeholder' => 'Ingrese sus detalles de la solicitud, como por ejemplo: día de llegada, sitio turistico que le gustaria visitar, lugar de hospedaje, lugar de arrivo. entre otros.',
+                                        'rows' => 5, 'required' => 'required']) !!} @if ($errors->has('detalles'))
+                                        <span class="help-block">
+        	                                    <strong>{{ $errors->first('detalles') }}</strong>
+        	                                </span> @endif
+                                    </div>
+                                </div>
+                                {!! Form::submit('Enviar solicitud de reserva', ['class' => 'submit btn btn-common', 'style' => 'cursor: pointer;']) !!}
+                                <!-- /.box-body -->
+                                {!! Form::close() !!}
+                            </div>
+                        </div>
+            </div>            
+        </section>
+    <!-- section de registro y de reserva end-->
+<br>
         <!-- Services Section Start -->
         <section id="servicios" class="section">
             <div class="container">
@@ -166,11 +354,20 @@
                     <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">A continuación presentamos nuestros principales y destacados servicios que tenemos para ofrecerte. <br> No dudes en solicitar más información acerca de estos.</p>
                 </div>
                 <div class="row pricing-tables">
+                     <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="pricing-table">
+                            <div class="pricing-details">
+                                <h2>Paquetes Turísticos</h2>
+                                <p>Contamos con una variedad de paquetes turísticos.<br><strong>¡Pregunta por ellos!</strong></p>
+                                <img src="{{ asset('img/servicios/paquete.ico') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="pricing-table">
                             <div class="pricing-details">
-                                <h2>Asistencia Médica</h2>
-                                <p>Contamos con tarjetas de asistencia médica para nuestros clientes.</p>
+                                <h2 style="align:center">Alojamientos Turísticos</h2>
+                                <p>Disfruta de las mejores experiencias en los hoteles del Quindío al mejor precio.</p>
                                 <img src="{{ asset('img/servicios/medico.ico') }}" alt="">
                             </div>
                         </div>
@@ -184,15 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="pricing-table">
-                            <div class="pricing-details">
-                                <h2>Paquetes Turísticos</h2>
-                                <p>Contamos con una variedad de paquetes turísticos.<br><strong>¡Pregunta por ellos!</strong></p>
-                                <img src="{{ asset('img/servicios/paquete.ico') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="pricing-table">
                             <div class="pricing-details">
@@ -228,29 +417,21 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Armenia Hotel</h5>
-                                        <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Armenia Hotel</h5>
-                                        <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Armenia Hotel</h5>
-                                        <p>Piscina</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/armenia-hotel/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Armenia Hotel</h5>
-                                        <p>Habitación</p>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-armenia-estelar" role="button" data-slide="prev">
@@ -276,29 +457,21 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/1.png') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Allure Mocawa</h5>
-                                        <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Allure Mocawa</h5>
-                                        <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Allure Mocawa</h5>
-                                        <p>Piscina</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/mocawa/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Allure Mocawa</h5>
-                                        <p>Habitaciones</p>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-mocawa" role="button" data-slide="prev">
@@ -326,29 +499,21 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Casa de Yaro</h5>
-                                        <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Casa de Yaro</h5>
-                                        <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Casa de Yaro</h5>
-                                        <p>Recepción</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/casa-yaro/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Casa de Yaro</h5>
-                                        <p>Habitaciones</p>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-casa-yaro" role="button" data-slide="prev">
@@ -374,29 +539,21 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/combia/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Combia</h5>
-                                        <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/combia/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Combia</h5>
-                                        <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/combia/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Combia</h5>
-                                        <p>Habitaciones</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/combia/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Combia</h5>
-                                        <p>Piscina</p>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-combia" role="button" data-slide="prev">
@@ -422,29 +579,21 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/1.jpg') }}" alt="First slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Campestre Tacurrumbi</h5>
-                                        <p>Exterior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/2.jpg') }}" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Campestre Tacurrumbi</h5>
-                                        <p>Interior</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/3.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Campestre Tacurrumbi</h5>
-                                        <p>Habitaciones</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('img/hoteles/tacurrumbi/4.jpg') }}" alt="Third slide">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Campestre Tacurrumbi</h5>
-                                        <p>Piscina</p>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-tacurrumbi" role="button" data-slide="prev">
@@ -494,19 +643,7 @@
         <!-- Portfolio Section Ends -->
 
         <!-- Start Video promo Section -->
-        <section class="video-promo section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="video-promo-content text-center">
-                            <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Conoce más sobre nosotros en un video</h2>
-                            <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Invierta en el Quindío</p>
-                            <a href="https://www.youtube.com/watch?v=tzjGmzveolc" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- End Video Promo Section -->
 
         <!-- Start Pricing Table Section -->
@@ -1000,7 +1137,7 @@
                     </div>
                     <div class="col-lg-8 col-sm-6 col-xs-12">
                         <div class="copyright">
-                            <p>Todos los derechos reservados &copy; {{ date('Y') }} - Plantilla Desarrollada por <a rel="nofollow" href="https://uideck.com">UIdeck</a> - Modificación y adaptación realizada por Andrés David Montoya y Luis Felipe Hernández.</p>
+                            <p>Todos los derechos reservados &copy; {{ date('Y') }} - Plantilla Desarrollada por <a rel="nofollow" href="https://uideck.com">UIdeck</a> - Modificación y adaptación realizada por Andrés David Montoya,Luis Felipe Hernández Gomez y Alba Lucia Montoya Hernandez .</p>
                         </div>
                     </div>
                 </div>

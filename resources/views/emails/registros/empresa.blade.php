@@ -6,14 +6,14 @@ Este mensaje se ha enviado automaticamente desde la página [https://inviertaene
 # Información de la empresa:
 
 @component('mail::table')
-| Dato                                  | Información                                                                                                           |
-| ------------------------------------- |:---------------------------------------------------------------------------------------------------------------------:|
-| <strong>NIT:</strong>                 | {{ $registro_empresa->reem_nit }}                                                                                     |
-| <strong>Nombre:</strong>              | {{ $registro_empresa->reem_nombre }}                                                                                  |
-| <strong>Teléfono:</strong>            | {{ $registro_empresa->reem_telefono }}                                                                                |
-| <strong>Dirección:</strong>           | {!! wordwrap(preg_replace('/_+/', ' ', $registro_empresa->reem_direccion), 50, html_entity_decode('<br>'), true) !!}  |
-| <strong>Correo:</strong>              | {{ $registro_empresa->reem_correo }}                                                                                  |
-| <strong>Código:</strong>              | {{ $registro_empresa->reem_codigo }}                                                                                  |
+| Dato                                  | Información                                                                                                                                       |
+| ------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <strong>NIT:</strong>                 | {{ $registro_empresa->reem_nit }}                                                                                                                  |
+| <strong>Nombre:</strong>              | {{ $registro_empresa->reem_nombre }}                                                                                                                |
+| <strong>Teléfono:</strong>            | {{ $registro_empresa->reem_telefono }}                                                                                                                  |
+| <strong>Dirección:</strong>           | {!! wordwrap(preg_replace('/_+/', ' ', $registro_empresa->reem_direccion), 50, html_entity_decode('<br>'), true) !!}                   |
+| <strong>Correo:</strong>              | {{ $registro_empresa->reem_correo }}                                                                                                           |
+| <strong>Código:</strong>              | {{ $registro_empresa->reem_codigo }}                                                                                                            |
 | <strong>Fecha de registro:</strong>   | {{ $registro_empresa->created_at }}   |
 
 @endcomponent
