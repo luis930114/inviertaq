@@ -256,7 +256,7 @@
                                             <div class="team-inner">
                                                 {!! Form::open(['route' => ['solicitud_reserva'], 'method' => 'post', 'class' => 'contact-form', 'id' => 'contact-form']) !!}
                                                 <div class="form-group {{ $errors->has('nombre') ? ' has-error' : '' }}">
-                                                    {!! Form::text('nombre','', ['class' => 'form-control', 'placeholder' => 'Ingrese su nombre completo', 'required' => 'required']) !!}
+                                                    {!! Form::text('nombre','', ['class' => 'form-control', 'placeholder' => 'Ingrese su nombre completo', 'style'=>'color: #000', 'required' => 'required']) !!}
                                                     @if ($errors->has('nombre'))
                                                         <span class="help-block">
                                                             <strong>{{ $errors->first('nombre') }}</strong>
@@ -264,7 +264,7 @@
                                                     @endif
                                                 </div>
                                                 <div class="form-group {{ $errors->has('telefono') ? ' has-error' : '' }}">
-                                                    {!! Form::text('telefono','', ['class' => 'form-control', 'placeholder' => 'Ingrese su número de teléfono ', 'required' => 'required']) !!}
+                                                    {!! Form::text('telefono','', ['class' => 'form-control', 'placeholder' => 'Ingrese su número de teléfono ', 'style'=>'color: #000', 'required' => 'required']) !!}
                                                     @if ($errors->has('telefono'))
                                                         <span class="help-block">
                                                             <strong>{{ $errors->first('telefono') }}</strong>
@@ -272,7 +272,7 @@
                                                     @endif
                                                 </div>
                                                 <div class="form-group {{ $errors->has('correo') ? ' has-error' : '' }}">
-                                                    {!! Form::text('correo','', ['class' => 'form-control', 'placeholder' => 'Ingrese su dirección de correo electrónico', 'required' => 'required']) !!}
+                                                    {!! Form::text('correo','', ['class' => 'form-control', 'placeholder' => 'Ingrese su dirección de correo electrónico', 'style'=>'color: #000', 'required' => 'required']) !!}
                                                     @if ($errors->has('correo'))
                                                         <span class="help-block">
                                                             <strong>{{ $errors->first('correo') }}</strong>
@@ -309,9 +309,9 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="input-group input-daterange">
-                                                        {!! Form::text('fecha_ingreso', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de ingreso', 'required' => 'required']) !!}
+                                                        {!! Form::text('fecha_ingreso', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de ingreso', 'style'=>'color: #000', 'autocomplete' => 'off', 'readonly' => 'readonly', 'required' => 'required']) !!}
                                                         <div class="input-group-addon">Hasta</div>
-                                                        {!! Form::text('fecha_salida', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de salida', 'required' => 'required']) !!}
+                                                        {!! Form::text('fecha_salida', \Carbon\Carbon::now('America/Bogota')->format('d-m-Y'), ['class' => 'form-control', 'placeholder' => 'Fecha de salida', 'style'=>'color: #000', 'autocomplete' => 'off', 'readonly' => 'readonly', 'required' => 'required']) !!}
                                                     </div>
                                                     <div class="">
                                                         @if ($errors->has('fecha_ingreso'))
@@ -327,7 +327,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group {{ $errors->has('detalles') ? ' has-error' : '' }}">
-                                                    {!! Form::textArea('detalles','', ['class' => 'form-control editor', 'placeholder' => 'Ingrese sus detalles de la solicitud, como por ejemplo: día de llegada, sitio turístico que le gustaría visitar, lugar de hospedaje, lugar de arrivo. entre otros.', 'rows' => 5, 'required' => 'required']) !!}
+                                                    {!! Form::textArea('detalles','', ['class' => 'form-control editor', 'placeholder' => 'Ingrese sus detalles de la solicitud, como por ejemplo: día de llegada, sitio turístico que le gustaría visitar, lugar de hospedaje, lugar de arrivo. entre otros.', 'rows' => 5, 'style'=>'color: #000', 'required' => 'required']) !!}
                                                     @if ($errors->has('detalles'))
                                                         <span class="help-block">
                                                             <strong>{{ $errors->first('detalles') }}</strong>
